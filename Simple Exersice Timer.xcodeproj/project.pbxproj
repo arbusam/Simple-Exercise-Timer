@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F876E1522235DC24003AC6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E1512235DC24003AC6B7 /* AppDelegate.swift */; };
-		F876E1542235DC24003AC6B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E1532235DC24003AC6B7 /* ViewController.swift */; };
+		F876E1542235DC24003AC6B7 /* StartTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E1532235DC24003AC6B7 /* StartTimerViewController.swift */; };
 		F876E1572235DC24003AC6B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F876E1552235DC24003AC6B7 /* Main.storyboard */; };
-		F876E1592235DC24003AC6B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F876E1582235DC24003AC6B7 /* Assets.xcassets */; };
 		F876E15C2235DC24003AC6B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F876E15A2235DC24003AC6B7 /* LaunchScreen.storyboard */; };
+		F876E1642235DCB4003AC6B7 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E1632235DCB4003AC6B7 /* WorkoutViewController.swift */; };
+		F876E1932235DD69003AC6B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F876E1922235DD69003AC6B7 /* Assets.xcassets */; };
+		F876E1962235DDD3003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F876E1942235DDD3003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 */; };
+		F876E1972235DDD3003AC6B7 /* Bleep-noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F876E1952235DDD3003AC6B7 /* Bleep-noise.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F876E14E2235DC24003AC6B7 /* Simple Exersice Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Exersice Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F876E1512235DC24003AC6B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F876E1532235DC24003AC6B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F876E1532235DC24003AC6B7 /* StartTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTimerViewController.swift; sourceTree = "<group>"; };
 		F876E1562235DC24003AC6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F876E1582235DC24003AC6B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F876E15B2235DC24003AC6B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F876E15D2235DC24003AC6B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F876E1632235DCB4003AC6B7 /* WorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
+		F876E1922235DD69003AC6B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F876E1942235DDD3003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Censored_Beep-Mastercard-569981218.mp3"; sourceTree = "<group>"; };
+		F876E1952235DDD3003AC6B7 /* Bleep-noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bleep-noise.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				F876E1512235DC24003AC6B7 /* AppDelegate.swift */,
-				F876E1532235DC24003AC6B7 /* ViewController.swift */,
+				F876E1532235DC24003AC6B7 /* StartTimerViewController.swift */,
+				F876E1632235DCB4003AC6B7 /* WorkoutViewController.swift */,
+				F876E1922235DD69003AC6B7 /* Assets.xcassets */,
 				F876E1552235DC24003AC6B7 /* Main.storyboard */,
-				F876E1582235DC24003AC6B7 /* Assets.xcassets */,
 				F876E15A2235DC24003AC6B7 /* LaunchScreen.storyboard */,
+				F876E1952235DDD3003AC6B7 /* Bleep-noise.mp3 */,
+				F876E1942235DDD3003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 */,
 				F876E15D2235DC24003AC6B7 /* Info.plist */,
 			);
 			path = "Simple Exersice Timer";
@@ -123,8 +132,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F876E15C2235DC24003AC6B7 /* LaunchScreen.storyboard in Resources */,
-				F876E1592235DC24003AC6B7 /* Assets.xcassets in Resources */,
+				F876E1932235DD69003AC6B7 /* Assets.xcassets in Resources */,
+				F876E1972235DDD3003AC6B7 /* Bleep-noise.mp3 in Resources */,
 				F876E1572235DC24003AC6B7 /* Main.storyboard in Resources */,
+				F876E1962235DDD3003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F876E1542235DC24003AC6B7 /* ViewController.swift in Sources */,
+				F876E1642235DCB4003AC6B7 /* WorkoutViewController.swift in Sources */,
+				F876E1542235DC24003AC6B7 /* StartTimerViewController.swift in Sources */,
 				F876E1522235DC24003AC6B7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +301,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.arhanbusam.Simple-Exersice-Timer";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arhanbusam.Simple-Exercise-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +319,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.arhanbusam.Simple-Exersice-Timer";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arhanbusam.Simple-Exercise-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
