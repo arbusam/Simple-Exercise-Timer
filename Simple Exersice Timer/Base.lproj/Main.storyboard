@@ -13,7 +13,7 @@
         <!--Settings-->
         <scene sceneID="1U4-FS-ey1">
             <objects>
-                <viewController id="WtB-2T-HyC" customClass="StartTimerViewController" customModule="Exercise_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WtB-2T-HyC" customClass="StartTimerViewController" customModule="Simple_Exersice_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VMu-b3-kgP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +165,7 @@
         <!--Workout View Controller-->
         <scene sceneID="cgU-rx-mfY">
             <objects>
-                <viewController id="l5t-Vs-BXz" customClass="WorkoutViewController" customModule="Exercise_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="l5t-Vs-BXz" customClass="WorkoutViewController" customModule="Simple_Exersice_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="od7-Cb-h7y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
