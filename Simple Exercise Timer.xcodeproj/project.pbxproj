@@ -7,21 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F86795722235D815002A126D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86795712235D815002A126D /* AppDelegate.swift */; };
-		F86795742235D815002A126D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86795732235D815002A126D /* ViewController.swift */; };
-		F86795772235D815002A126D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86795752235D815002A126D /* Main.storyboard */; };
-		F86795792235D817002A126D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86795782235D817002A126D /* Assets.xcassets */; };
-		F867957C2235D817002A126D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F867957A2235D817002A126D /* LaunchScreen.storyboard */; };
+		F867958B2235D8C4002A126D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86795832235D8C3002A126D /* Assets.xcassets */; };
+		F867958C2235D8C4002A126D /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86795842235D8C3002A126D /* WorkoutViewController.swift */; };
+		F867958D2235D8C4002A126D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86795852235D8C3002A126D /* AppDelegate.swift */; };
+		F867958E2235D8C4002A126D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86795862235D8C3002A126D /* LaunchScreen.storyboard */; };
+		F86795902235D8C4002A126D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86795882235D8C4002A126D /* Main.storyboard */; };
+		F86795922235D8C4002A126D /* StartTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F867958A2235D8C4002A126D /* StartTimerViewController.swift */; };
+		F86795A02235D986002A126D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F867959F2235D986002A126D /* Info.plist */; };
+		F876E1432235DBCF003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F876E1412235DBCF003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 */; };
+		F876E1442235DBCF003AC6B7 /* Bleep-noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F876E1422235DBCF003AC6B7 /* Bleep-noise.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F867956E2235D815002A126D /* Simple Exercise Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Exercise Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F86795712235D815002A126D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F86795732235D815002A126D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F86795762235D815002A126D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F86795782235D817002A126D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F867957B2235D817002A126D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F867957D2235D817002A126D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F86795832235D8C3002A126D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Exercise Timer/Exercise Timer/Assets.xcassets"; sourceTree = "<group>"; };
+		F86795842235D8C3002A126D /* WorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
+		F86795852235D8C3002A126D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../Exercise Timer/Exercise Timer/AppDelegate.swift"; sourceTree = "<group>"; };
+		F86795862235D8C3002A126D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F86795882235D8C4002A126D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F867958A2235D8C4002A126D /* StartTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartTimerViewController.swift; sourceTree = "<group>"; };
+		F867959F2235D986002A126D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F876E1412235DBCF003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Censored_Beep-Mastercard-569981218.mp3"; sourceTree = "<group>"; };
+		F876E1422235DBCF003AC6B7 /* Bleep-noise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bleep-noise.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +61,15 @@
 		F86795702235D815002A126D /* Simple Exercise Timer */ = {
 			isa = PBXGroup;
 			children = (
-				F86795712235D815002A126D /* AppDelegate.swift */,
-				F86795732235D815002A126D /* ViewController.swift */,
-				F86795752235D815002A126D /* Main.storyboard */,
-				F86795782235D817002A126D /* Assets.xcassets */,
-				F867957A2235D817002A126D /* LaunchScreen.storyboard */,
-				F867957D2235D817002A126D /* Info.plist */,
+				F86795852235D8C3002A126D /* AppDelegate.swift */,
+				F86795832235D8C3002A126D /* Assets.xcassets */,
+				F876E1422235DBCF003AC6B7 /* Bleep-noise.mp3 */,
+				F876E1412235DBCF003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 */,
+				F86795882235D8C4002A126D /* Main.storyboard */,
+				F86795862235D8C3002A126D /* LaunchScreen.storyboard */,
+				F867958A2235D8C4002A126D /* StartTimerViewController.swift */,
+				F86795842235D8C3002A126D /* WorkoutViewController.swift */,
+				F867959F2235D986002A126D /* Info.plist */,
 			);
 			path = "Simple Exercise Timer";
 			sourceTree = "<group>";
@@ -122,9 +132,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F867957C2235D817002A126D /* LaunchScreen.storyboard in Resources */,
-				F86795792235D817002A126D /* Assets.xcassets in Resources */,
-				F86795772235D815002A126D /* Main.storyboard in Resources */,
+				F86795902235D8C4002A126D /* Main.storyboard in Resources */,
+				F867958B2235D8C4002A126D /* Assets.xcassets in Resources */,
+				F876E1442235DBCF003AC6B7 /* Bleep-noise.mp3 in Resources */,
+				F86795A02235D986002A126D /* Info.plist in Resources */,
+				F867958E2235D8C4002A126D /* LaunchScreen.storyboard in Resources */,
+				F876E1432235DBCF003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +148,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F86795742235D815002A126D /* ViewController.swift in Sources */,
-				F86795722235D815002A126D /* AppDelegate.swift in Sources */,
+				F867958D2235D8C4002A126D /* AppDelegate.swift in Sources */,
+				F867958C2235D8C4002A126D /* WorkoutViewController.swift in Sources */,
+				F86795922235D8C4002A126D /* StartTimerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F86795752235D815002A126D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F86795762235D815002A126D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F867957A2235D817002A126D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F867957B2235D817002A126D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F867957E2235D817002A126D /* Debug */ = {
