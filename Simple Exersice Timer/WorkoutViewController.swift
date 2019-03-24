@@ -40,6 +40,7 @@ class WorkoutViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var homeButton: UIBarButtonItem!
     @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var backButton: UIToolbar!
     
     @objc func clock() {
         seconds -= 1
@@ -47,6 +48,7 @@ class WorkoutViewController: UIViewController {
         if seconds == 0 {
             countdownLabel.text = "Go!"
             statusLabel.text = "Activity"
+            
         }
         if seconds == -1 {
             countdownLabel.text = activity
@@ -108,10 +110,14 @@ class WorkoutViewController: UIViewController {
                 } else {
                     countdownLabel.text = "Rest!"
                     statusLabel.text = "Resting"
+                    self.view.backgroundColor = UIColor.red
+                    backButton.barTintColor = UIColor.red
                 }
             } else {
                 countdownLabel.text = "Rest!"
                 statusLabel.text = "Resting"
+                self.view.backgroundColor = UIColor.red
+                backButton.barTintColor = UIColor.red
             }
         }
         if numActivity == -1 {
@@ -157,6 +163,9 @@ class WorkoutViewController: UIViewController {
             
             countdownLabel.text = "Go!"
             statusLabel.text = "Activity"
+            self.view.backgroundColor = UIColor.green
+            backButton.barTintColor = UIColor.green
+            
         } else if numRest == -1 {
             timer.invalidate()
             countdownLabel.text = "Go!"
@@ -171,6 +180,9 @@ class WorkoutViewController: UIViewController {
         repLabel.isHidden = true
         setLabel.isHidden = true
         statusLabel.isHidden = true
+        
+        self.view.backgroundColor = UIColor.green
+        backButton.barTintColor = UIColor.green
         
         numActivity = Int(activity)!
         numRest = Int(rest)!
