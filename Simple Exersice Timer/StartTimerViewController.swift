@@ -22,6 +22,8 @@ class StartTimerViewController: UIViewController {
         repLabel.text = defaults.string(forKey: "reps")
         setLabel.text = defaults.string(forKey: "sets")
         
+        UNService.shared.authorize()
+        
     }
     
     @IBOutlet weak var activityLabel: UITextField!
