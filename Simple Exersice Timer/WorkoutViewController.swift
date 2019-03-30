@@ -29,6 +29,7 @@ class WorkoutViewController: UIViewController {
     var numRest = 0
     var repNum = 0
     var setNum = 0
+    
     var pause = false
     var exersicing = true
     
@@ -202,7 +203,7 @@ class WorkoutViewController: UIViewController {
             timer.invalidate()
             pause = true
             print(pause)
-            pauseButton.backgroundColor = UIColor.green
+            pauseButton.backgroundColor = UIColor(red: 25, green: 135, blue: 95, alpha: 0.8)
             pauseButton.setTitle("Continue",for: .normal)
             
         } else {
