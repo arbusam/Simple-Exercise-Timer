@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import ChameleonFramework
 
 class WorkoutViewController: UIViewController {
     
@@ -203,7 +204,7 @@ class WorkoutViewController: UIViewController {
             timer.invalidate()
             pause = true
             print(pause)
-            pauseButton.backgroundColor = UIColor(red: 25, green: 135, blue: 95, alpha: 0.8)
+            pauseButton.backgroundColor = UIColor.flatGreen() //UIColor(red: 25, green: 135, blue: 95, alpha: 0.8)
             pauseButton.setTitle("Continue",for: .normal)
             
         } else {
@@ -214,7 +215,7 @@ class WorkoutViewController: UIViewController {
             }
             pause = false
             print(pause)
-            pauseButton.backgroundColor = UIColor.red
+            pauseButton.backgroundColor = UIColor.flatRedColorDark()
             pauseButton.setTitle("Pause",for: .normal)
         }
         
