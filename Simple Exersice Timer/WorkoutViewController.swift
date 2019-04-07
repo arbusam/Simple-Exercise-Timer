@@ -59,6 +59,7 @@ class WorkoutViewController: UIViewController {
             repLabel.isHidden = false
             setLabel.isHidden = false
             statusLabel.isHidden = false
+            backButton.barTintColor = UIColor.green
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(WorkoutViewController.activityClock), userInfo: nil, repeats: true)
         }
     }
@@ -67,6 +68,7 @@ class WorkoutViewController: UIViewController {
         numActivity -= 1
         countdownLabel.text = String(numActivity)
         pauseButton.isHidden = false
+        pauseButton.isEnabled = true
         exersicing = true
         
         var alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
@@ -99,30 +101,34 @@ class WorkoutViewController: UIViewController {
             audioPlayer2.play()
             
             repNum += 1
-            repLabel.text = "Reps Done in this set: \(repNum)"
+            repLabel.text = "Reps Done in this set: \(repNum)/\(reps)"
             if repNum == Int(reps) {
                 setNum += 1
                 repNum = 0
-                setLabel.text = "Sets Done: \(setNum)"
-                repLabel.text = "Reps Done in this Set: \(repNum)"
+                setLabel.text = "Sets Done: \(setNum)/\(sets)"
+                repLabel.text = "Reps Done in this Set: \(repNum)/\(reps)"
                 if setNum == Int(sets) {
                     countdownLabel.text = "Done!"
                     statusLabel.isHidden = true
+                    pauseButton.isHidden = true
+                    pauseButton.isEnabled = false
                     timer.invalidate()
                 } else {
                     countdownLabel.text = "Rest!"
                     statusLabel.text = "Resting"
-                    self.view.backgroundColor = UIColor.red
-                    backButton.barTintColor = UIColor.red
+                    self.view.backgroundColor = UIColor(hexString: "e04e4e")
+                    backButton.barTintColor = UIColor(hexString: "e04e4e")
                 }
             } else {
                 countdownLabel.text = "Rest!"
                 statusLabel.text = "Resting"
-                self.view.backgroundColor = UIColor.red
-                backButton.barTintColor = UIColor.red
+                self.view.backgroundColor = UIColor(hexString: "e04e4e")
+                backButton.barTintColor = UIColor(hexString: "e04e4e")
             }
         }
         if numActivity == -1 {
+            pauseButton.isHidden = true
+            pauseButton.isEnabled = false
             numRest = Int(rest)!
             timer.invalidate()
             countdownLabel.text = rest
@@ -133,6 +139,8 @@ class WorkoutViewController: UIViewController {
         numRest -= 1
         countdownLabel.text = String(numRest)
         exersicing = false
+        pauseButton.isHidden = false
+        pauseButton.isEnabled = true
         
         var alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
         var alertSound2 = Bundle.main.path(forResource: "Bleep-noise", ofType: "mp3")
@@ -170,6 +178,8 @@ class WorkoutViewController: UIViewController {
             
         } else if numRest == -1 {
             timer.invalidate()
+            pauseButton.isHidden = true
+            pauseButton.isEnabled = false
             countdownLabel.text = "Go!"
             countdownLabel.text = activity
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(WorkoutViewController.activityClock), userInfo: nil, repeats: true)
@@ -183,8 +193,9 @@ class WorkoutViewController: UIViewController {
         setLabel.isHidden = true
         statusLabel.isHidden = true
         
-        self.view.backgroundColor = UIColor.green
         backButton.barTintColor = UIColor.green
+        
+        self.view.backgroundColor = UIColor.green
         
         numActivity = Int(activity)!
         numRest = Int(rest)!
@@ -204,8 +215,7 @@ class WorkoutViewController: UIViewController {
             timer.invalidate()
             pause = true
             print(pause)
-            pauseButton.backgroundColor = UIColor.flatGreens() //UIColor(red: 25, green: 135, blue: 95, alpha: 0.8)
-            pauseButton.setTitle("Continue",for: .normal)
+            pauseButton.setImage(UIImage(named: "play"), for: .normal)
             
         } else {
             if exersicing == true {
@@ -215,8 +225,7 @@ class WorkoutViewController: UIViewController {
             }
             pause = false
             print(pause)
-            pauseButton.backgroundColor = UIColor.flatRedColorDark()
-            pauseButton.setTitle("Pause",for: .normal)
+            pauseButton.setImage(UIImage(named: "pause"), for: .normal)
         }
         
     }

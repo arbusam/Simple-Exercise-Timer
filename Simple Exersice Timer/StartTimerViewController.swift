@@ -34,8 +34,8 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         print(activityData)
         restLabel.selectRow(defaults.integer(forKey: "dropdownActivity"), inComponent: 0, animated: true)
         restLabel.selectRow(defaults.integer(forKey: "dropdownRest"), inComponent: 1, animated: true)
-        restLabel.selectRow(defaults.integer(forKey: "dropdownReps"), inComponent: 2, animated: true)
-        restLabel.selectRow(defaults.integer(forKey: "dropdownSets"), inComponent: 3, animated: true)
+        restLabel.selectRow(defaults.integer(forKey: "dropdownSets"), inComponent: 2, animated: true)
+        restLabel.selectRow(defaults.integer(forKey: "dropdownReps"), inComponent: 3, animated: true)
         
         activityValue = defaults.integer(forKey: "dropdownActivity")
         restValue = defaults.integer(forKey: "dropdownRest")
@@ -76,13 +76,13 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         }
         
         if component == 2 {
-            self.defaults.set(row, forKey: "dropdownReps")
-            repsValue = row
+            self.defaults.set(row, forKey: "dropdownSets")
+            setsValue = row
         }
         
         if component == 3 {
-            self.defaults.set(row, forKey: "dropdownSets")
-            setsValue = row
+            self.defaults.set(row, forKey: "dropdownReps")
+            repsValue = row
         }
         
     }
@@ -146,10 +146,10 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
             workoutVC.reps = String(repsValue)
             workoutVC.sets = String(setsValue)
 
-            self.defaults.set(workoutVC.activity, forKey: "activity")
-            self.defaults.set(workoutVC.rest, forKey: "rest")
-            self.defaults.set(workoutVC.reps, forKey: "reps")
-            self.defaults.set(workoutVC.sets, forKey: "sets")
+//            self.defaults.set(workoutVC.activity, forKey: "activity")
+//            self.defaults.set(workoutVC.rest, forKey: "rest")
+//            self.defaults.set(workoutVC.reps, forKey: "reps")
+//            self.defaults.set(workoutVC.sets, forKey: "sets")
 
         }
     }
