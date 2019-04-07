@@ -60,7 +60,6 @@
 				383C41DC95286A5E7E7F7600 /* Pods-Simple Exersice Timer.debug.xcconfig */,
 				47ED943EDD04FB30909E62E7 /* Pods-Simple Exersice Timer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

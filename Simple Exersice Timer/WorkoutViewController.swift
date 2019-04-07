@@ -204,7 +204,7 @@ class WorkoutViewController: UIViewController {
             timer.invalidate()
             pause = true
             print(pause)
-            pauseButton.backgroundColor = UIColor.flatGreen() //UIColor(red: 25, green: 135, blue: 95, alpha: 0.8)
+            pauseButton.backgroundColor = UIColor.flatGreens() //UIColor(red: 25, green: 135, blue: 95, alpha: 0.8)
             pauseButton.setTitle("Continue",for: .normal)
             
         } else {
