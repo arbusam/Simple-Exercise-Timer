@@ -21,11 +21,15 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
     var repsValue = 0
     var setsValue = 0
     
+    @IBOutlet weak var brightnesSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.restLabel.delegate = self
         self.restLabel.dataSource = self
+        
+        brightnesSlider.value = Float(UIScreen.main.brightness)
         
         for i in 0...60 {
             print(i)
@@ -42,6 +46,10 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         repsValue = defaults.integer(forKey: "dropdownReps")
         setsValue = defaults.integer(forKey: "dropdownSets")
         
+    }
+    
+    @IBAction func brighnessChanged(_ sender: UISlider) {
+        UIScreen.main.brightness = CGFloat(sender.value)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -92,9 +100,8 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
     @IBAction func startButtonPressed() {
-        
         text = "Succces"
-        let alert = UIAlertController(title: "Alert", message: "Your values have to cointain something.", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "Alert", message: "Your values have to contain something.", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
 
         if activityValue != 0 {

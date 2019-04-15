@@ -101,12 +101,12 @@ class WorkoutViewController: UIViewController {
             audioPlayer2.play()
             
             repNum += 1
-            repLabel.text = "Reps Done in this set: \(repNum)/\(reps)"
+            repLabel.text = "Reps Done: \(repNum)/\(reps)"
             if repNum == Int(reps) {
                 setNum += 1
                 repNum = 0
                 setLabel.text = "Sets Done: \(setNum)/\(sets)"
-                repLabel.text = "Reps Done in this Set: \(repNum)/\(reps)"
+                repLabel.text = "Reps Done: \(repNum)/\(reps)"
                 if setNum == Int(sets) {
                     countdownLabel.text = "Done!"
                     statusLabel.isHidden = true
@@ -199,6 +199,9 @@ class WorkoutViewController: UIViewController {
         
         numActivity = Int(activity)!
         numRest = Int(rest)!
+        
+        repLabel.text = "Reps Done: 0/\(reps)"
+        setLabel.text = "Sets Done: 0/\(sets)"
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(WorkoutViewController.clock), userInfo: nil, repeats: true)
     }
