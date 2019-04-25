@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, MFMailComposeViewControllerDelegate {
     
     var activityData:[String] = [String]()
     
@@ -31,7 +32,7 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         brightnesSlider.value = Float(UIScreen.main.brightness)
         
-        for i in 0...60 {
+        for i in 1...60 {
             print(i)
             activityData.append("\(i)")
         }
@@ -100,46 +101,46 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
     @IBAction func startButtonPressed() {
-        text = "Succces"
-        let alert = UIAlertController(title: "Alert", message: "Your values have to contain something.", preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-
-        if activityValue != 0 {
-            print("Working")
-        } else {
-            text = "Failed"
-            self.present(alert, animated: true, completion: nil)
-
-        }
-        if text != "Failed" {
-            if restValue != 0 {
-                print("Working")
-            } else {
-                text = "Failed"
-                self.present(alert, animated: true, completion: nil)
-            }
-            if text != "Failed" {
-                if repsValue != 0 {
-                    print("Working")
-                } else {
-                    text = "Failed"
-                    self.present(alert, animated: true, completion: nil)
-                }
-                if text != "Failed" {
-                    if setsValue != 0 {
-                        print("Working")
-                    } else {
-                        text = "Failed"
-                        self.present(alert, animated: true, completion: nil)
-                    }
-                }
-            }
-        }
-        if text == "Succces" {
+//        text = "Succces"
+//        let alert = UIAlertController(title: "Alert", message: "All your values have to contain something.", preferredStyle: UIAlertController.Style.alert)
+//        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+//
+//        if activityValue != 0 {
+//            print("Working")
+//        } else {
+//            text = "Failed"
+//            self.present(alert, animated: true, completion: nil)
+//
+//        }
+//        if text != "Failed" {
+//            if restValue != 0 {
+//                print("Working")
+//            } else {
+//                text = "Failed"
+//                self.present(alert, animated: true, completion: nil)
+//            }
+//            if text != "Failed" {
+//                if repsValue != 0 {
+//                    print("Working")
+//                } else {
+//                    text = "Failed"
+//                    self.present(alert, animated: true, completion: nil)
+//                }
+//                if text != "Failed" {
+//                    if setsValue != 0 {
+//                        print("Working")
+//                    } else {
+//                        text = "Failed"
+//                        self.present(alert, animated: true, completion: nil)
+//                    }
+//                }
+//            }
+//        }
+//        if text == "Succces" {
             performSegue(withIdentifier: "startSegue", sender: self)
-        } else {
-            print(text)
-        }
+//        } else {
+//            print(text)
+//        }
         
     }
     
@@ -148,10 +149,10 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
 
             let workoutVC = segue.destination as! WorkoutViewController
 
-            workoutVC.activity = String(activityValue)
-            workoutVC.rest = String(restValue)
-            workoutVC.reps = String(repsValue)
-            workoutVC.sets = String(setsValue)
+            workoutVC.activity = String(activityValue + 1)
+            workoutVC.rest = String(restValue + 1)
+            workoutVC.reps = String(repsValue + 1)
+            workoutVC.sets = String(setsValue + 1)
 
 //            self.defaults.set(workoutVC.activity, forKey: "activity")
 //            self.defaults.set(workoutVC.rest, forKey: "rest")
@@ -161,8 +162,44 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         }
     }
     
-    //TODO: Make sure you can't enter letters.
+    @IBAction func helpButtonPressed(_ sender: UIBarButtonItem) {
+        let mailComposeController = configureMailController()
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposeController, animated: true, completion: nil)
+        } else {
+            showMailError()
+        }
+        
+    }
     
+    func configureMailController() -> MFMailComposeViewController {
+        
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        
+        mailComposerVC.setToRecipients(["ab.apphelp@gmail.com"])
+        mailComposerVC.setSubject("Help with Simple Exercise Timer")
+        mailComposerVC.setMessageBody("I need help with the app Simple Exercise Timer \n I need help with: \n", isHTML: false)
+        
+        return mailComposerVC
+        
+    }
+    
+    func showMailError() {
+        
+        let mailErrorAlert = UIAlertController(title: "Could not send email", message: "There was an error sending the email.", preferredStyle: .alert)
+        
+        let dismiss = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        
+        mailErrorAlert.addAction(dismiss)
+        
+        self.present(mailErrorAlert, animated: true, completion: nil)
+        
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
     
 }
 

@@ -135,6 +135,7 @@ class WorkoutViewController: UIViewController {
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(WorkoutViewController.restClock), userInfo: nil, repeats: true)
         }
     }
+    
     @objc func restClock() {
         numRest -= 1
         countdownLabel.text = String(numRest)
@@ -235,7 +236,7 @@ class WorkoutViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goBack" {
-            
+            timer.invalidate()
         }
     }
     
