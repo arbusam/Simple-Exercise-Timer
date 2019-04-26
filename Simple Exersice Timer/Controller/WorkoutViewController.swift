@@ -12,8 +12,6 @@ import ChameleonFramework
 
 class WorkoutViewController: UIViewController {
     
-    
-    
     var audioPlayer = AVAudioPlayer()
     var audioPlayer2 = AVAudioPlayer()
     
@@ -238,6 +236,10 @@ class WorkoutViewController: UIViewController {
         if segue.identifier == "goBack" {
             timer.invalidate()
         }
+    }
+    
+    func setCountdownLabel(text:String) {
+        countdownLabel.text = text
     }
     
 }

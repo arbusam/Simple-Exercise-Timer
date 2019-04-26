@@ -63,6 +63,36 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F800175B22727FC00080DDCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F876E1552235DC24003AC6B7 /* Main.storyboard */,
+				F876E15A2235DC24003AC6B7 /* LaunchScreen.storyboard */,
+				F876E1922235DD69003AC6B7 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F800175F227280430080DDCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F876E1512235DC24003AC6B7 /* AppDelegate.swift */,
+				F876E1532235DC24003AC6B7 /* StartTimerViewController.swift */,
+				F876E1632235DCB4003AC6B7 /* WorkoutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F8001760227285ED0080DDCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F876E1952235DDD3003AC6B7 /* Bleep-noise.mp3 */,
+				F876E1942235DDD3003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 */,
+				F876E15D2235DC24003AC6B7 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F876E1452235DC23003AC6B7 = {
 			isa = PBXGroup;
 			children = (
@@ -84,15 +114,9 @@
 		F876E1502235DC24003AC6B7 /* Simple Exersice Timer */ = {
 			isa = PBXGroup;
 			children = (
-				F876E1512235DC24003AC6B7 /* AppDelegate.swift */,
-				F876E1532235DC24003AC6B7 /* StartTimerViewController.swift */,
-				F876E1632235DCB4003AC6B7 /* WorkoutViewController.swift */,
-				F876E1922235DD69003AC6B7 /* Assets.xcassets */,
-				F876E1552235DC24003AC6B7 /* Main.storyboard */,
-				F876E15A2235DC24003AC6B7 /* LaunchScreen.storyboard */,
-				F876E1952235DDD3003AC6B7 /* Bleep-noise.mp3 */,
-				F876E1942235DDD3003AC6B7 /* Censored_Beep-Mastercard-569981218.mp3 */,
-				F876E15D2235DC24003AC6B7 /* Info.plist */,
+				F800175F227280430080DDCC /* Controller */,
+				F800175B22727FC00080DDCC /* View */,
+				F8001760227285ED0080DDCC /* Supporting Files */,
 			);
 			path = "Simple Exersice Timer";
 			sourceTree = "<group>";
