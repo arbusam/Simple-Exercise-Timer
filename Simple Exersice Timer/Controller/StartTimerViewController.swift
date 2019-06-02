@@ -8,6 +8,7 @@
 
 import UIKit
 import MessageUI
+import HealthKit
 
 class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, MFMailComposeViewControllerDelegate {
     
@@ -46,6 +47,23 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         restValue = defaults.integer(forKey: "dropdownRest")
         repsValue = defaults.integer(forKey: "dropdownReps")
         setsValue = defaults.integer(forKey: "dropdownSets")
+        
+        
+        if HKHealthStore.isHealthDataAvailable() {
+            // Add code to use HealthKit here.
+            
+            let healthStore = HKHealthStore()
+            
+            let allTypes = Set([HKObjectType.workoutType()])
+            
+            healthStore.requestAuthorization(toShare: allTypes, read: nil) { (success, error) in
+                if !success {
+                    // Handle the error here.
+                    print(error!)
+                }
+            }
+            
+        }
         
     }
     
@@ -162,15 +180,15 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         }
     }
     
-    @IBAction func helpButtonPressed(_ sender: UIBarButtonItem) {
-        let mailComposeController = configureMailController()
-        if MFMailComposeViewController.canSendMail() {
-            self.present(mailComposeController, animated: true, completion: nil)
-        } else {
-            showMailError()
-        }
-        
-    }
+//    @IBAction func helpButtonPressed(_ sender: UIBarButtonItem) {
+//        let mailComposeController = configureMailController()
+//        if MFMailComposeViewController.canSendMail() {
+//            self.present(mailComposeController, animated: true, completion: nil)
+//        } else {
+//            showMailError()
+//        }
+//
+//    }
     
     func configureMailController() -> MFMailComposeViewController {
         

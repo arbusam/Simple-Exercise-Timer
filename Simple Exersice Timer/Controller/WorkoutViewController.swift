@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 import ChameleonFramework
+import HealthKit
+import SVProgressHUD
 
 class WorkoutViewController: UIViewController {
     
@@ -18,6 +20,10 @@ class WorkoutViewController: UIViewController {
     
     var timer = Timer()
     var seconds = 3
+    
+    var totalSeconds = 0
+    
+    var workoutEvents: [HKWorkoutEvent] = []
     
     var activity = ""
     var rest = ""
@@ -33,6 +39,8 @@ class WorkoutViewController: UIViewController {
     var exersicing = true
     
     var player: AVAudioPlayer?
+    
+    var done = false
     
     @IBOutlet weak var countdownLabel: UILabel!
     @IBOutlet weak var repLabel: UILabel!
@@ -68,6 +76,8 @@ class WorkoutViewController: UIViewController {
         pauseButton.isHidden = false
         pauseButton.isEnabled = true
         exersicing = true
+        
+        totalSeconds += 1
         
         var alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
         var alertSound2 = Bundle.main.path(forResource: "Bleep-noise", ofType: "mp3")
@@ -106,11 +116,52 @@ class WorkoutViewController: UIViewController {
                 setLabel.text = "Sets Done: \(setNum)/\(sets)"
                 repLabel.text = "Reps Done: \(repNum)/\(reps)"
                 if setNum == Int(sets) {
+                    
                     countdownLabel.text = "Done!"
                     statusLabel.isHidden = true
                     pauseButton.isHidden = true
                     pauseButton.isEnabled = false
+                    done = true
                     timer.invalidate()
+                    
+                    SVProgressHUD.show(withStatus: "Saving")
+                    
+                    if HKHealthStore.isHealthDataAvailable() {
+                        // Add code to use HealthKit here.
+                        
+                        let healthStore = HKHealthStore()
+                        
+                        let finish = NSDate() // Now
+                        let start = finish.addingTimeInterval(TimeInterval(-totalSeconds))
+                        
+                        let workout = HKWorkout(
+                            activityType: .other,
+                            start: start as Date,
+                            end: finish as Date,
+                            workoutEvents: workoutEvents,
+                            totalEnergyBurned: nil,
+                            totalDistance: nil,
+                            device: nil,
+                            metadata: nil
+                        )
+                        
+                        healthStore.save(workout) { (success, error) in
+                            
+                            if success {
+                                
+                                SVProgressHUD.showSuccess(withStatus: "Saved to Apple Health successfully.")
+                                
+                            }
+                            else {
+                                
+                                SVProgressHUD.showError(withStatus: "Could not save to Apple Health.")
+                                
+                            }
+                            
+                        }
+                        
+                    }
+                    
                 } else {
                     countdownLabel.text = "Rest!"
                     statusLabel.text = "Resting"
@@ -187,6 +238,7 @@ class WorkoutViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         repLabel.isHidden = true
         setLabel.isHidden = true
@@ -203,11 +255,83 @@ class WorkoutViewController: UIViewController {
         setLabel.text = "Sets Done: 0/\(sets)"
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(WorkoutViewController.clock), userInfo: nil, repeats: true)
+        
     }
     
     @IBAction func backButtonPressed(_ sender: UIToolbar) {
+        
         timer.invalidate()
-        performSegue(withIdentifier: "goBack", sender: self)
+        
+        if done == false {
+            let alert = UIAlertController(title: "Do you want to save?", message: "Your workout was ended before it finished. Do you want to save it to Apple Health", preferredStyle: .alert)
+            
+            let yesButton = UIAlertAction(title: "Yes", style: .default) { (action) in
+                
+                SVProgressHUD.show(withStatus: "Saving")
+                
+                if HKHealthStore.isHealthDataAvailable() {
+                    // Add code to use HealthKit here.
+                    
+                    let healthStore = HKHealthStore()
+                    
+                    let finish = NSDate() // Now
+                    let start = finish.addingTimeInterval(TimeInterval(-self.totalSeconds))
+                    
+                    let workout = HKWorkout(
+                        activityType: .other,
+                        start: start as Date,
+                        end: finish as Date,
+                        workoutEvents: self.workoutEvents,
+                        totalEnergyBurned: nil,
+                        totalDistance: nil,
+                        device: nil,
+                        metadata: nil
+                    )
+                    
+                    healthStore.save(workout) { (success, error) in
+                        
+                        if success {
+                            
+                            SVProgressHUD.dismiss()
+                            SVProgressHUD.showSuccess(withStatus: "Saved to Apple Health successfully.")
+                            
+                        }
+                        else {
+                            
+                            SVProgressHUD.dismiss()
+                            SVProgressHUD.showError(withStatus: "Could not save to Apple Health.")
+                            
+                        }
+                        
+                        self.performSegue(withIdentifier: "goBack", sender: self)
+                        
+                    }
+                    
+                } else {
+                    SVProgressHUD.dismiss()
+                    SVProgressHUD.showError(withStatus: "Could not save to Apple Health")
+                }
+                
+            }
+            
+            let noButton = UIAlertAction(title: "No", style: .default) { (action) in
+                
+                self.performSegue(withIdentifier: "goBack", sender: self)
+                
+            }
+            
+            alert.addAction(yesButton)
+            alert.addAction(noButton)
+            
+            present(alert, animated: true, completion: nil)
+            
+            performSegue(withIdentifier: "goBack", sender: self)
+        } else {
+            
+            performSegue(withIdentifier: "goBack", sender: self)
+            
+        }
+        
     }
     
     
@@ -217,9 +341,13 @@ class WorkoutViewController: UIViewController {
             timer.invalidate()
             pause = true
             print(pause)
+            workoutEvents.append(HKWorkoutEvent(type: .pause, date: NSDate() as Date))
             pauseButton.setImage(UIImage(named: "play"), for: .normal)
             
         } else {
+            
+            workoutEvents.append(HKWorkoutEvent(type: .resume, date: NSDate() as Date))
+            
             if exersicing == true {
                 timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(WorkoutViewController.activityClock), userInfo: nil, repeats: true)
             } else if exersicing == false {
@@ -228,6 +356,7 @@ class WorkoutViewController: UIViewController {
             pause = false
             print(pause)
             pauseButton.setImage(UIImage(named: "pause"), for: .normal)
+            
         }
         
     }
