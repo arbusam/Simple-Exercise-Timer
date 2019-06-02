@@ -98,17 +98,6 @@
                                     <constraint firstAttribute="height" constant="30" id="yDz-OB-CJ0"/>
                                 </constraints>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8G-m8-mHC">
-                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <items>
-                                    <barButtonItem title="Item" image="help" id="CJS-9O-crn">
-                                        <connections>
-                                            <action selector="helpButtonPressed:" destination="WtB-2T-HyC" id="0hl-2p-BUP"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                                <color key="barTintColor" red="0.1764705882" green="0.83921568629999999" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.83921568627450982" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -118,14 +107,11 @@
                             <constraint firstItem="4DE-RD-rcl" firstAttribute="leading" secondItem="L6N-GD-Kkx" secondAttribute="trailing" id="DKC-ea-mYx"/>
                             <constraint firstItem="lgg-Uz-fH9" firstAttribute="centerY" secondItem="4DE-RD-rcl" secondAttribute="centerY" id="FCb-pe-9hP"/>
                             <constraint firstItem="L6N-GD-Kkx" firstAttribute="leading" secondItem="mil-YJ-BK0" secondAttribute="leading" constant="27" id="H7q-Ab-wyJ"/>
-                            <constraint firstItem="u8G-m8-mHC" firstAttribute="bottom" secondItem="mil-YJ-BK0" secondAttribute="bottom" id="OfR-y0-jER"/>
                             <constraint firstItem="mil-YJ-BK0" firstAttribute="bottom" secondItem="4DE-RD-rcl" secondAttribute="bottom" constant="119" id="WHJ-Gq-xId"/>
                             <constraint firstItem="noq-zs-J3F" firstAttribute="centerY" secondItem="VMu-b3-kgP" secondAttribute="centerY" id="XKp-3U-iGM"/>
                             <constraint firstItem="4DE-RD-rcl" firstAttribute="centerY" secondItem="L6N-GD-Kkx" secondAttribute="centerY" id="b0E-2I-Up1"/>
                             <constraint firstItem="4DE-RD-rcl" firstAttribute="leading" secondItem="mil-YJ-BK0" secondAttribute="leading" constant="65" id="jKU-RD-zlV"/>
-                            <constraint firstItem="u8G-m8-mHC" firstAttribute="trailing" secondItem="mil-YJ-BK0" secondAttribute="trailing" id="nCO-eq-MnU"/>
                             <constraint firstItem="noq-zs-J3F" firstAttribute="centerX" secondItem="VMu-b3-kgP" secondAttribute="centerX" id="o0e-M6-QtP"/>
-                            <constraint firstItem="u8G-m8-mHC" firstAttribute="leading" secondItem="mil-YJ-BK0" secondAttribute="leading" id="rkb-vR-S6N"/>
                             <constraint firstAttribute="trailing" secondItem="lgg-Uz-fH9" secondAttribute="trailing" constant="7" id="tQk-eA-2XN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mil-YJ-BK0"/>
@@ -249,7 +235,6 @@
     <resources>
         <image name="back" width="30" height="30"/>
         <image name="gear-7" width="30" height="30"/>
-        <image name="help" width="25.666666030883789" height="30.666666030883789"/>
         <image name="highBrightness" width="30" height="30"/>
         <image name="lowBrightness" width="32" height="32"/>
         <image name="pause" width="30" height="30"/>
