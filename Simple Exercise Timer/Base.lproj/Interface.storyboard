@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Simple_Exercise_Timer" customModuleProvider="target">
+                    <items>
+                        <timer width="135" height="60" alignment="left" previewedSeconds="0" id="iNR-6w-2xL">
+                            <fontDescription key="font" type="system" pointSize="23"/>
+                        </timer>
+                        <button width="36" alignment="left" backgroundImage="pause-1" id="zco-Ql-2T9">
+                            <connections>
+                                <action selector="pauseButtonPressed" destination="AgC-eL-Hgc" id="Td3-X8-tHp"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="2Qq-t5-RP0"/>
+                        <imageView alignment="left" id="Fdm-i3-zrt"/>
+                    </items>
+                    <connections>
+                        <outlet property="pauseButton" destination="zco-Ql-2T9" id="KGh-Ia-FIx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="122"/>
+        </scene>
+    </scenes>
+</document>

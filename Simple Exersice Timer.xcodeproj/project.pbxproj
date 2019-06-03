@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		D2D451950D4DE0AD2D562BBE /* Pods_Simple_Exersice_Timer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6989BB9EEA7A31E91F451DC /* Pods_Simple_Exersice_Timer.framework */; };
 		F86BACD522A1EE670002EC4A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86BACD422A1EE670002EC4A /* HealthKit.framework */; };
+		F86BACE122A3C5170002EC4A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86BACDF22A3C5170002EC4A /* Interface.storyboard */; };
+		F86BACE322A3C5190002EC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86BACE222A3C5190002EC4A /* Assets.xcassets */; };
+		F86BACEA22A3C5190002EC4A /* Simple Exercise Timer Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F86BACE922A3C5190002EC4A /* Simple Exercise Timer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F86BACEF22A3C5190002EC4A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BACEE22A3C5190002EC4A /* InterfaceController.swift */; };
+		F86BACF122A3C5190002EC4A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86BACF022A3C5190002EC4A /* ExtensionDelegate.swift */; };
+		F86BACF322A3C5190002EC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F86BACF222A3C5190002EC4A /* Assets.xcassets */; };
+		F86BACF722A3C5190002EC4A /* Simple Exercise Timer.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F86BACDD22A3C5160002EC4A /* Simple Exercise Timer.app */; };
 		F876E1522235DC24003AC6B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E1512235DC24003AC6B7 /* AppDelegate.swift */; };
 		F876E1542235DC24003AC6B7 /* StartTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F876E1532235DC24003AC6B7 /* StartTimerViewController.swift */; };
 		F876E1572235DC24003AC6B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F876E1552235DC24003AC6B7 /* Main.storyboard */; };
@@ -19,12 +26,63 @@
 		F876E1972235DDD3003AC6B7 /* Bleep-noise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F876E1952235DDD3003AC6B7 /* Bleep-noise.mp3 */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F86BACEB22A3C5190002EC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F876E1462235DC23003AC6B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F86BACE822A3C5190002EC4A;
+			remoteInfo = "Simple Exercise Timer Extension";
+		};
+		F86BACF522A3C5190002EC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F876E1462235DC23003AC6B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F86BACDC22A3C5160002EC4A;
+			remoteInfo = "Simple Exercise Timer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F86BACFD22A3C5190002EC4A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F86BACEA22A3C5190002EC4A /* Simple Exercise Timer Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86BACFF22A3C5190002EC4A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F86BACF722A3C5190002EC4A /* Simple Exercise Timer.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		383C41DC95286A5E7E7F7600 /* Pods-Simple Exersice Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Exersice Timer.debug.xcconfig"; path = "Target Support Files/Pods-Simple Exersice Timer/Pods-Simple Exersice Timer.debug.xcconfig"; sourceTree = "<group>"; };
 		47ED943EDD04FB30909E62E7 /* Pods-Simple Exersice Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Exersice Timer.release.xcconfig"; path = "Target Support Files/Pods-Simple Exersice Timer/Pods-Simple Exersice Timer.release.xcconfig"; sourceTree = "<group>"; };
 		E6989BB9EEA7A31E91F451DC /* Pods_Simple_Exersice_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Exersice_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F86BACD422A1EE670002EC4A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		F86BACD622A1EE670002EC4A /* Simple Exersice Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Simple Exersice Timer.entitlements"; sourceTree = "<group>"; };
+		F86BACDD22A3C5160002EC4A /* Simple Exercise Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Exercise Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86BACE022A3C5170002EC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F86BACE222A3C5190002EC4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F86BACE422A3C5190002EC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F86BACE922A3C5190002EC4A /* Simple Exercise Timer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simple Exercise Timer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F86BACEE22A3C5190002EC4A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F86BACF022A3C5190002EC4A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F86BACF222A3C5190002EC4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F86BACF422A3C5190002EC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F876E14E2235DC24003AC6B7 /* Simple Exersice Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Exersice Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F876E1512235DC24003AC6B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F876E1532235DC24003AC6B7 /* StartTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTimerViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +96,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F86BACE622A3C5190002EC4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F876E14B2235DC24003AC6B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,10 +163,33 @@
 			path = "Supporting-Files";
 			sourceTree = "<group>";
 		};
+		F86BACDE22A3C5170002EC4A /* Simple Exercise Timer */ = {
+			isa = PBXGroup;
+			children = (
+				F86BACDF22A3C5170002EC4A /* Interface.storyboard */,
+				F86BACE222A3C5190002EC4A /* Assets.xcassets */,
+				F86BACE422A3C5190002EC4A /* Info.plist */,
+			);
+			path = "Simple Exercise Timer";
+			sourceTree = "<group>";
+		};
+		F86BACED22A3C5190002EC4A /* Simple Exercise Timer Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F86BACEE22A3C5190002EC4A /* InterfaceController.swift */,
+				F86BACF022A3C5190002EC4A /* ExtensionDelegate.swift */,
+				F86BACF222A3C5190002EC4A /* Assets.xcassets */,
+				F86BACF422A3C5190002EC4A /* Info.plist */,
+			);
+			path = "Simple Exercise Timer Extension";
+			sourceTree = "<group>";
+		};
 		F876E1452235DC23003AC6B7 = {
 			isa = PBXGroup;
 			children = (
 				F876E1502235DC24003AC6B7 /* Simple Exersice Timer */,
+				F86BACDE22A3C5170002EC4A /* Simple Exercise Timer */,
+				F86BACED22A3C5190002EC4A /* Simple Exercise Timer Extension */,
 				F876E14F2235DC24003AC6B7 /* Products */,
 				B0CCF51046EE71072C34AF67 /* Pods */,
 				44A1093A0B930F3D72725A3C /* Frameworks */,
@@ -112,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				F876E14E2235DC24003AC6B7 /* Simple Exersice Timer.app */,
+				F86BACDD22A3C5160002EC4A /* Simple Exercise Timer.app */,
+				F86BACE922A3C5190002EC4A /* Simple Exercise Timer Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +220,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F86BACDC22A3C5160002EC4A /* Simple Exercise Timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F86BACFE22A3C5190002EC4A /* Build configuration list for PBXNativeTarget "Simple Exercise Timer" */;
+			buildPhases = (
+				F86BACDB22A3C5160002EC4A /* Resources */,
+				F86BACFD22A3C5190002EC4A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F86BACEC22A3C5190002EC4A /* PBXTargetDependency */,
+			);
+			name = "Simple Exercise Timer";
+			productName = "Simple Exercise Timer";
+			productReference = F86BACDD22A3C5160002EC4A /* Simple Exercise Timer.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F86BACE822A3C5190002EC4A /* Simple Exercise Timer Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F86BACFC22A3C5190002EC4A /* Build configuration list for PBXNativeTarget "Simple Exercise Timer Extension" */;
+			buildPhases = (
+				F86BACE522A3C5190002EC4A /* Sources */,
+				F86BACE622A3C5190002EC4A /* Frameworks */,
+				F86BACE722A3C5190002EC4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple Exercise Timer Extension";
+			productName = "Simple Exercise Timer Extension";
+			productReference = F86BACE922A3C5190002EC4A /* Simple Exercise Timer Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		F876E14D2235DC24003AC6B7 /* Simple Exersice Timer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F876E1602235DC24003AC6B7 /* Build configuration list for PBXNativeTarget "Simple Exersice Timer" */;
@@ -139,10 +263,12 @@
 				F876E14B2235DC24003AC6B7 /* Frameworks */,
 				F876E14C2235DC24003AC6B7 /* Resources */,
 				95D580A718C5F82DEBA5357A /* [CP] Embed Pods Frameworks */,
+				F86BACFF22A3C5190002EC4A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F86BACF622A3C5190002EC4A /* PBXTargetDependency */,
 			);
 			name = "Simple Exersice Timer";
 			productName = "Simple Exersice Timer";
@@ -155,10 +281,16 @@
 		F876E1462235DC23003AC6B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Arhan Busam";
 				TargetAttributes = {
+					F86BACDC22A3C5160002EC4A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F86BACE822A3C5190002EC4A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					F876E14D2235DC24003AC6B7 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
@@ -187,11 +319,30 @@
 			projectRoot = "";
 			targets = (
 				F876E14D2235DC24003AC6B7 /* Simple Exersice Timer */,
+				F86BACDC22A3C5160002EC4A /* Simple Exercise Timer */,
+				F86BACE822A3C5190002EC4A /* Simple Exercise Timer Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F86BACDB22A3C5160002EC4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86BACE322A3C5190002EC4A /* Assets.xcassets in Resources */,
+				F86BACE122A3C5170002EC4A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F86BACE722A3C5190002EC4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86BACF322A3C5190002EC4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F876E14C2235DC24003AC6B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +407,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F86BACE522A3C5190002EC4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F86BACF122A3C5190002EC4A /* ExtensionDelegate.swift in Sources */,
+				F86BACEF22A3C5190002EC4A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F876E14A2235DC24003AC6B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,7 +428,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F86BACEC22A3C5190002EC4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F86BACE822A3C5190002EC4A /* Simple Exercise Timer Extension */;
+			targetProxy = F86BACEB22A3C5190002EC4A /* PBXContainerItemProxy */;
+		};
+		F86BACF622A3C5190002EC4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F86BACDC22A3C5160002EC4A /* Simple Exercise Timer */;
+			targetProxy = F86BACF522A3C5190002EC4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		F86BACDF22A3C5170002EC4A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F86BACE022A3C5170002EC4A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		F876E1552235DC24003AC6B7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +469,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F86BACF822A3C5190002EC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6586955H9;
+				IBSC_MODULE = Simple_Exercise_Timer_Extension;
+				INFOPLIST_FILE = "Simple Exercise Timer/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arhanbusam.Simple-Exercise-Timer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		F86BACF922A3C5190002EC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6586955H9;
+				IBSC_MODULE = Simple_Exercise_Timer_Extension;
+				INFOPLIST_FILE = "Simple Exercise Timer/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arhanbusam.Simple-Exercise-Timer.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		F86BACFA22A3C5190002EC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6586955H9;
+				INFOPLIST_FILE = "Simple Exercise Timer Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arhanbusam.Simple-Exercise-Timer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		F86BACFB22A3C5190002EC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6586955H9;
+				INFOPLIST_FILE = "Simple Exercise Timer Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arhanbusam.Simple-Exercise-Timer.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
 		F876E15E2235DC24003AC6B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -447,6 +710,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F86BACFC22A3C5190002EC4A /* Build configuration list for PBXNativeTarget "Simple Exercise Timer Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86BACFA22A3C5190002EC4A /* Debug */,
+				F86BACFB22A3C5190002EC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F86BACFE22A3C5190002EC4A /* Build configuration list for PBXNativeTarget "Simple Exercise Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F86BACF822A3C5190002EC4A /* Debug */,
+				F86BACF922A3C5190002EC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F876E1492235DC23003AC6B7 /* Build configuration list for PBXProject "Simple Exersice Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

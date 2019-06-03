@@ -9,8 +9,34 @@
 import UIKit
 import MessageUI
 import HealthKit
+import WatchConnectivity
 
-class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, MFMailComposeViewControllerDelegate {
+class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, MFMailComposeViewControllerDelegate, WCSessionDelegate {
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+        
+        
+    }
+    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        
+        
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+        
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+        
+        
+    }
+    
     
     var activityData:[String] = [String]()
     
@@ -22,6 +48,15 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
     var restValue = 0
     var repsValue = 0
     var setsValue = 0
+    
+    var watchSession: WCSession? {
+        didSet {
+            if let session = watchSession {
+                session.delegate = self
+                session.activate()
+            }
+        }
+    }
     
     @IBOutlet weak var brightnesSlider: UISlider!
     
