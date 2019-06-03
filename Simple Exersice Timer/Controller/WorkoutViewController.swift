@@ -126,35 +126,41 @@ class WorkoutViewController: UIViewController {
                     
                     SVProgressHUD.show(withStatus: "Saving")
                     
-                    if HKHealthStore.isHealthDataAvailable() {
-                        // Add code to use HealthKit here.
+                    DispatchQueue.main.async {
                         
-                        let healthStore = HKHealthStore()
-                        
-                        let finish = NSDate() // Now
-                        let start = finish.addingTimeInterval(TimeInterval(-totalSeconds))
-                        
-                        let workout = HKWorkout(
-                            activityType: .other,
-                            start: start as Date,
-                            end: finish as Date,
-                            workoutEvents: workoutEvents,
-                            totalEnergyBurned: nil,
-                            totalDistance: nil,
-                            device: nil,
-                            metadata: nil
-                        )
-                        
-                        healthStore.save(workout) { (success, error) in
+                        if HKHealthStore.isHealthDataAvailable() {
+                            // Add code to use HealthKit here.
                             
-                            if success {
+                            let healthStore = HKHealthStore()
+                            
+                            let finish = NSDate() // Now
+                            let start = finish.addingTimeInterval(TimeInterval(-self.totalSeconds))
+                            
+                            let workout = HKWorkout(
+                                activityType: .other,
+                                start: start as Date,
+                                end: finish as Date,
+                                workoutEvents: self.workoutEvents,
+                                totalEnergyBurned: nil,
+                                totalDistance: nil,
+                                device: nil,
+                                metadata: nil
+                            )
+                            
+                            healthStore.save(workout) { (success, error) in
                                 
-                                SVProgressHUD.showSuccess(withStatus: "Saved to Apple Health successfully.")
-                                
-                            }
-                            else {
-                                
-                                SVProgressHUD.showError(withStatus: "Could not save to Apple Health.")
+                                if success {
+                                    
+                                    SVProgressHUD.dismiss()
+                                    SVProgressHUD.showSuccess(withStatus: "Saved to Apple Health successfully.")
+                                    
+                                }
+                                else {
+                                    
+                                    SVProgressHUD.dismiss()
+                                    SVProgressHUD.showError(withStatus: "Could not save to Apple Health.")
+                                    
+                                }
                                 
                             }
                             
@@ -269,50 +275,55 @@ class WorkoutViewController: UIViewController {
                 
                 SVProgressHUD.show(withStatus: "Saving")
                 
-                if HKHealthStore.isHealthDataAvailable() {
-                    // Add code to use HealthKit here.
+                DispatchQueue.main.async {
                     
-                    let healthStore = HKHealthStore()
-                    
-                    let finish = NSDate() // Now
-                    let start = finish.addingTimeInterval(TimeInterval(-self.totalSeconds))
-                    
-                    let workout = HKWorkout(
-                        activityType: .other,
-                        start: start as Date,
-                        end: finish as Date,
-                        workoutEvents: self.workoutEvents,
-                        totalEnergyBurned: nil,
-                        totalDistance: nil,
-                        device: nil,
-                        metadata: nil
-                    )
-                    
-                    healthStore.save(workout) { (success, error) in
+                    if HKHealthStore.isHealthDataAvailable() {
+                        // Add code to use HealthKit here.
                         
-                        if success {
+                        let healthStore = HKHealthStore()
+                        
+                        let finish = NSDate() // Now
+                        let start = finish.addingTimeInterval(TimeInterval(-self.totalSeconds))
+                        
+                        let workout = HKWorkout(
+                            activityType: .other,
+                            start: start as Date,
+                            end: finish as Date,
+                            workoutEvents: self.workoutEvents,
+                            totalEnergyBurned: nil,
+                            totalDistance: nil,
+                            device: nil,
+                            metadata: nil
+                        )
+                        
+                        healthStore.save(workout) { (success, error) in
                             
-                            SVProgressHUD.dismiss()
-                            SVProgressHUD.showSuccess(withStatus: "Saved to Apple Health successfully.")
+                            if success {
+                                
+                                SVProgressHUD.dismiss()
+                                SVProgressHUD.showSuccess(withStatus: "Saved to Apple Health successfully.")
+                                
+                            }
+                            else {
+                                
+                                SVProgressHUD.dismiss()
+                                SVProgressHUD.showError(withStatus: "Could not save to Apple Health.")
+                                
+                            }
                             
                         }
-                        else {
-                            
-                            SVProgressHUD.dismiss()
-                            SVProgressHUD.showError(withStatus: "Could not save to Apple Health.")
-                            
-                        }
                         
-                        self.performSegue(withIdentifier: "goBack", sender: self)
-                        
+                    } else {
+                        SVProgressHUD.dismiss()
+                        SVProgressHUD.showError(withStatus: "Could not save to Apple Health")
                     }
                     
-                } else {
-                    SVProgressHUD.dismiss()
-                    SVProgressHUD.showError(withStatus: "Could not save to Apple Health")
                 }
                 
+                self.performSegue(withIdentifier: "goBack", sender: self)
+                
             }
+            
             
             let noButton = UIAlertAction(title: "No", style: .default) { (action) in
                 
