@@ -11,8 +11,9 @@ import AVFoundation
 import ChameleonFramework
 import HealthKit
 import SVProgressHUD
+import WatchConnectivity
 
-class WorkoutViewController: UIViewController {
+class WorkoutViewController: UIViewController, WCSessionDelegate {
     
     var audioPlayer = AVAudioPlayer()
     var audioPlayer2 = AVAudioPlayer()
@@ -41,6 +42,8 @@ class WorkoutViewController: UIViewController {
     var player: AVAudioPlayer?
     
     var done = false
+    
+    var session: WCSession!
     
     @IBOutlet weak var countdownLabel: UILabel!
     @IBOutlet weak var repLabel: UILabel!
@@ -79,8 +82,8 @@ class WorkoutViewController: UIViewController {
         
         totalSeconds += 1
         
-        var alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
-        var alertSound2 = Bundle.main.path(forResource: "Bleep-noise", ofType: "mp3")
+        let alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
+        let alertSound2 = Bundle.main.path(forResource: "Bleep-noise", ofType: "mp3")
         
         
         do {
@@ -192,8 +195,8 @@ class WorkoutViewController: UIViewController {
         pauseButton.isHidden = false
         pauseButton.isEnabled = true
         
-        var alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
-        var alertSound2 = Bundle.main.path(forResource: "Bleep-noise", ofType: "mp3")
+        let alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
+        let alertSound2 = Bundle.main.path(forResource: "Bleep-noise", ofType: "mp3")
         
         
         do {
@@ -253,6 +256,14 @@ class WorkoutViewController: UIViewController {
         
         repLabel.text = "Reps Done: 0/\(reps)"
         setLabel.text = "Sets Done: 0/\(sets)"
+        
+        if WCSession.isSupported() {
+            
+            self.session = WCSession.default
+            self.session.delegate = self
+            self.session.activate()
+            
+        }
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(WorkoutViewController.clock), userInfo: nil, repeats: true)
         
@@ -369,6 +380,35 @@ class WorkoutViewController: UIViewController {
     
     func setCountdownLabel(text:String) {
         countdownLabel.text = text
+    }
+    
+}
+
+extension WorkoutViewController {
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+        
+        
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        
+        
+        
+    }
+    
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+        
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+        
+        
     }
     
 }

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14810.11" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14619.8"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -17,20 +15,23 @@
                         <timer width="135" height="60" alignment="left" previewedSeconds="0" id="iNR-6w-2xL">
                             <fontDescription key="font" type="system" pointSize="23"/>
                         </timer>
-                        <button width="36" alignment="left" backgroundImage="pause-1" id="zco-Ql-2T9">
+                        <button width="33" height="32" alignment="left" id="zco-Ql-2T9">
                             <connections>
                                 <action selector="pauseButtonPressed" destination="AgC-eL-Hgc" id="Td3-X8-tHp"/>
                             </connections>
                         </button>
                         <separator alignment="left" id="2Qq-t5-RP0"/>
-                        <imageView alignment="left" id="Fdm-i3-zrt"/>
+                        <imageView width="40" height="40" alignment="left" id="Fdm-i3-zrt">
+                            <color key="tintColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="53" height="42" alignment="left" id="xar-cB-3ur"/>
                     </items>
                     <connections>
                         <outlet property="pauseButton" destination="zco-Ql-2T9" id="KGh-Ia-FIx"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="34" y="122"/>
+            <point key="canvasLocation" x="34" y="133.5"/>
         </scene>
     </scenes>
 </document>
