@@ -36,8 +36,8 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         brightnesSlider.value = Float(UIScreen.main.brightness)
         
-        activityData.append("Activity Secs")
-        restData.append("Rest Secs")
+        activityData.append("Action")
+        restData.append("Break")
         repData.append("Sets")
         setData.append("Reps")
         
