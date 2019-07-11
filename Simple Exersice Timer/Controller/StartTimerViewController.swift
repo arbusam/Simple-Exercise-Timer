@@ -13,6 +13,9 @@ import HealthKit
 class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, MFMailComposeViewControllerDelegate {
     
     var activityData:[String] = [String]()
+    var restData:[String] = [String]()
+    var setData:[String] = [String]()
+    var repData:[String] = [String]()
     
     var text = "Succces"
     
@@ -33,9 +36,17 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         brightnesSlider.value = Float(UIScreen.main.brightness)
         
+        activityData.append("Activity Secs")
+        restData.append("Rest Secs")
+        repData.append("Sets")
+        setData.append("Reps")
+        
         for i in 1...60 {
             print(i)
             activityData.append("\(i)")
+            restData.append("\(i)")
+            setData.append("\(i)")
+            repData.append("\(i)")
         }
         print(activityData)
         restLabel.selectRow(defaults.integer(forKey: "dropdownActivity"), inComponent: 0, animated: true)
@@ -85,7 +96,17 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        return activityData[row]
+        if component == 0 {
+            return activityData[row]
+        } else if component == 1 {
+            return restData[row]
+        } else if component == 2 {
+            return setData[row]
+        } else if component == 3 {
+            return repData[row]
+        } else {
+            fatalError("Could not create the row \(component)")
+        }
         
     }
     
@@ -119,46 +140,46 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
     @IBAction func startButtonPressed() {
-//        text = "Succces"
-//        let alert = UIAlertController(title: "Alert", message: "All your values have to contain something.", preferredStyle: UIAlertController.Style.alert)
-//        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-//
-//        if activityValue != 0 {
-//            print("Working")
-//        } else {
-//            text = "Failed"
-//            self.present(alert, animated: true, completion: nil)
-//
-//        }
-//        if text != "Failed" {
-//            if restValue != 0 {
-//                print("Working")
-//            } else {
-//                text = "Failed"
-//                self.present(alert, animated: true, completion: nil)
-//            }
-//            if text != "Failed" {
-//                if repsValue != 0 {
-//                    print("Working")
-//                } else {
-//                    text = "Failed"
-//                    self.present(alert, animated: true, completion: nil)
-//                }
-//                if text != "Failed" {
-//                    if setsValue != 0 {
-//                        print("Working")
-//                    } else {
-//                        text = "Failed"
-//                        self.present(alert, animated: true, completion: nil)
-//                    }
-//                }
-//            }
-//        }
-//        if text == "Succces" {
+        text = "Succces"
+        let alert = UIAlertController(title: "Alert", message: "All your values have to contain something.", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+
+        if activityValue != 0 {
+            print("Working")
+        } else {
+            text = "Failed"
+            self.present(alert, animated: true, completion: nil)
+
+        }
+        if text != "Failed" {
+            if restValue != 0 {
+                print("Working")
+            } else {
+                text = "Failed"
+                self.present(alert, animated: true, completion: nil)
+            }
+            if text != "Failed" {
+                if repsValue != 0 {
+                    print("Working")
+                } else {
+                    text = "Failed"
+                    self.present(alert, animated: true, completion: nil)
+                }
+                if text != "Failed" {
+                    if setsValue != 0 {
+                        print("Working")
+                    } else {
+                        text = "Failed"
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+        }
+        if text == "Succces" {
             performSegue(withIdentifier: "startSegue", sender: self)
-//        } else {
-//            print(text)
-//        }
+        } else {
+            print(text)
+        }
         
     }
     
@@ -167,10 +188,10 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
 
             let workoutVC = segue.destination as! WorkoutViewController
 
-            workoutVC.activity = String(activityValue + 1)
-            workoutVC.rest = String(restValue + 1)
-            workoutVC.reps = String(repsValue + 1)
-            workoutVC.sets = String(setsValue + 1)
+            workoutVC.activity = String(activityValue)
+            workoutVC.rest = String(restValue)
+            workoutVC.reps = String(repsValue)
+            workoutVC.sets = String(setsValue)
 
 //            self.defaults.set(workoutVC.activity, forKey: "activity")
 //            self.defaults.set(workoutVC.rest, forKey: "rest")
