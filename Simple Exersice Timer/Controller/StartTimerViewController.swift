@@ -192,6 +192,8 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
             workoutVC.rest = String(restValue)
             workoutVC.reps = String(repsValue)
             workoutVC.sets = String(setsValue)
+            
+            workoutVC.modalPresentationStyle = .fullScreen
 
 //            self.defaults.set(workoutVC.activity, forKey: "activity")
 //            self.defaults.set(workoutVC.rest, forKey: "rest")

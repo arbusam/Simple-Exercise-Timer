@@ -379,7 +379,13 @@ class WorkoutViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goBack" {
+            
             timer.invalidate()
+            
+            let startTimerVC = segue.destination as! StartTimerViewController
+            
+            startTimerVC.modalPresentationStyle = .fullScreen
+            
         }
     }
     
