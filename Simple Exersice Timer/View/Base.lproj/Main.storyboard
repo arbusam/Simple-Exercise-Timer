@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WtB-2T-HyC">
-    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
@@ -9,16 +9,63 @@
         <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="Aww-q9-tgg">
+            <objects>
+                <tabBarController id="Urd-gu-ere" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TEq-lf-EYi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WtB-2T-HyC" kind="relationship" relationship="viewControllers" id="yaO-gc-cdL"/>
+                        <segue destination="eid-U8-mDY" kind="relationship" relationship="viewControllers" id="0zd-sE-V1S"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgg-KW-l1v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1199" y="55"/>
+        </scene>
+        <!--Customise Reps-->
+        <scene sceneID="cMN-EF-c38">
+            <objects>
+                <tableViewController id="eid-U8-mDY" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9S4-Wa-iJA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wqW-Zo-Psa">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wqW-Zo-Psa" id="pbj-NN-EMO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eid-U8-mDY" id="fME-JG-K0C"/>
+                            <outlet property="delegate" destination="eid-U8-mDY" id="imc-Td-cr9"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Customise Reps" selectedImage="gear" catalog="system" id="Au2-Y5-jkc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qz-e7-zlU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74" y="584"/>
+        </scene>
+        <!--Normal Reps-->
         <scene sceneID="1U4-FS-ey1">
             <objects>
                 <viewController id="WtB-2T-HyC" customClass="StartTimerViewController" customModule="Simple_Exersice_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VMu-b3-kgP">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noq-zs-J3F">
-                                <rect key="frame" x="263" y="407" width="186" height="170"/>
+                                <rect key="frame" x="94.666666666666686" y="321" width="186" height="170"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="186" id="N4F-71-bQo"/>
@@ -34,27 +81,27 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4DE-RD-rcl">
-                                <rect key="frame" x="63" y="874" width="586" height="31"/>
+                                <rect key="frame" x="63" y="619" width="249" height="31"/>
                                 <connections>
                                     <action selector="brighnessChanged:" destination="WtB-2T-HyC" eventType="valueChanged" id="EJy-gk-Yfu"/>
                                 </connections>
                             </slider>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lgg-Uz-fH9">
-                                <rect key="frame" x="647" y="863.5" width="58" height="50.5"/>
+                                <rect key="frame" x="310" y="609" width="58" height="50.333333333333371"/>
                                 <color key="tintColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BAJ-0A-tVn"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.min.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="L6N-GD-Kkx">
-                                <rect key="frame" x="25" y="869.5" width="40" height="39"/>
+                                <rect key="frame" x="25" y="615" width="40" height="38.666666666666629"/>
                                 <color key="tintColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="yDz-OB-CJ0"/>
                                 </constraints>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eE-EX-ujZ">
-                                <rect key="frame" x="0.0" y="0.0" width="712" height="385"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="255"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -78,7 +125,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mil-YJ-BK0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gear-7" selectedImage="gear-7" id="ksc-VR-5pB"/>
+                    <tabBarItem key="tabBarItem" title="Normal Reps" image="gear-7" selectedImage="timer" catalog="system" id="ksc-VR-5pB"/>
                     <navigationItem key="navigationItem" id="buF-mU-QHJ"/>
                     <connections>
                         <outlet property="brightnesSlider" destination="4DE-RD-rcl" id="HxO-Em-JeM"/>
@@ -88,24 +135,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHt-Fd-dBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="546.09800362976409" y="15.107913669064748"/>
+            <point key="canvasLocation" x="-74" y="-262"/>
         </scene>
         <!--Workout View Controller-->
         <scene sceneID="cgU-rx-mfY">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="l5t-Vs-BXz" customClass="WorkoutViewController" customModule="Simple_Exersice_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="od7-Cb-h7y">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iaj-Sm-CJ2">
-                                <rect key="frame" x="113" y="380.5" width="488" height="27"/>
+                                <rect key="frame" x="113" y="267.66666666666669" width="151" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uky-dQ-Gfw">
-                                <rect key="frame" x="72" y="637" width="571" height="89.5"/>
+                                <rect key="frame" x="72" y="523.66666666666663" width="234" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89.670000000000002" id="QLl-UX-i5l"/>
                                 </constraints>
@@ -118,7 +165,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVQ-zN-BQM" userLabel="countdownLabel">
-                                <rect key="frame" x="228" y="367.5" width="256" height="249"/>
+                                <rect key="frame" x="59.666666666666657" y="254.66666666666663" width="255.99999999999997" height="249"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="249" id="fMY-c2-mVG"/>
                                     <constraint firstAttribute="width" constant="256" id="zWW-FS-wQD"/>
@@ -128,7 +175,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxN-Yu-WQM">
-                                <rect key="frame" x="0.0" y="0.0" width="407" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="iWl-51-ecj"/>
                                 </constraints>
@@ -143,13 +190,13 @@
                                 <color key="barTintColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </toolbar>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sets Done: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4D-PM-9sO">
-                                <rect key="frame" x="54" y="82" width="573.5" height="27"/>
+                                <rect key="frame" x="54.000000000000014" y="82" width="236.33333333333337" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps Done: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdc-BL-6jZ">
-                                <rect key="frame" x="52" y="34" width="573.5" height="27"/>
+                                <rect key="frame" x="52.000000000000014" y="34" width="236.33333333333337" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
@@ -195,14 +242,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcr-PO-2r4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749.5999999999999" y="6.6502463054187197"/>
+            <point key="canvasLocation" x="1426" y="15"/>
         </scene>
     </scenes>
     <resources>
         <image name="back" width="30" height="30"/>
+        <image name="gear" catalog="system" width="64" height="60"/>
         <image name="gear-7" width="30" height="30"/>
         <image name="pause.fill" catalog="system" width="58" height="64"/>
         <image name="sun.max.fill" catalog="system" width="64" height="62"/>
         <image name="sun.min.fill" catalog="system" width="64" height="60"/>
+        <image name="timer" catalog="system" width="64" height="62"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yaO-gc-cdL"/>
+    </inferredMetricsTieBreakers>
 </document>
