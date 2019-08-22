@@ -26,13 +26,31 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
     var repsValue = 0
     var setsValue = 0
     
+    @IBOutlet weak var activityLabelForInput: UILabel!
+    @IBOutlet weak var restLabelForInput: UILabel!
+    @IBOutlet weak var setsLabelForInput: UILabel!
+    @IBOutlet weak var repsLabelForInput: UILabel!
     @IBOutlet weak var brightnesSlider: UISlider!
+    @IBOutlet weak var lowBrightnessIcon: UIImageView!
+    @IBOutlet weak var highBrightnessIcon: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.restLabel.delegate = self
         self.restLabel.dataSource = self
+        
+        #if targetEnvironment(UIKitForMac)
+        brightnesSlider.isHidden = true
+        brightnesSlider.isEnabled = false
+        highBrightnessIcon.isHidden = true
+        lowBrightnessIcon.isHidden = true
+        restLabel.isHidden = true
+        activityLabelForInput.isHidden = false
+        restLabelForInput.isHidden = false
+        setsLabelForInput.isHidden = false
+        repsLabelForInput.isHidden = false
+        #endif
         
         brightnesSlider.value = Float(UIScreen.main.brightness)
         

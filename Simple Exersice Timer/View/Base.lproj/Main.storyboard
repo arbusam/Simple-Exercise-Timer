@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WtB-2T-HyC">
-    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WtB-2T-HyC" initialMenu="An2-9R-1E3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="WtB-2T-HyC" customClass="StartTimerViewController" customModule="Simple_Exersice_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VMu-b3-kgP">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noq-zs-J3F">
-                                <rect key="frame" x="263" y="407" width="186" height="170"/>
+                                <rect key="frame" x="114" y="336" width="186" height="170"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="186" id="N4F-71-bQo"/>
@@ -34,46 +34,114 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4DE-RD-rcl">
-                                <rect key="frame" x="63" y="874" width="586" height="31"/>
+                                <rect key="frame" x="63" y="698" width="288" height="31"/>
                                 <connections>
                                     <action selector="brighnessChanged:" destination="WtB-2T-HyC" eventType="valueChanged" id="EJy-gk-Yfu"/>
                                 </connections>
                             </slider>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lgg-Uz-fH9">
-                                <rect key="frame" x="647" y="863.5" width="58" height="50.5"/>
+                                <rect key="frame" x="349" y="687.5" width="58" height="50.5"/>
                                 <color key="tintColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BAJ-0A-tVn"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.min.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="L6N-GD-Kkx">
-                                <rect key="frame" x="25" y="869.5" width="40" height="39"/>
+                                <rect key="frame" x="25" y="693.5" width="40" height="39"/>
                                 <color key="tintColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="yDz-OB-CJ0"/>
                                 </constraints>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eE-EX-ujZ">
-                                <rect key="frame" x="0.0" y="0.0" width="712" height="385"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="314"/>
                             </pickerView>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xy0-Um-LNv">
+                                <rect key="frame" x="92" y="56" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7t-6h-fhr">
+                                <rect key="frame" x="20" y="13" width="61.5" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="UGd-R7-t0b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sets:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgJ-uQ-zna">
+                                <rect key="frame" x="20" y="99" width="39" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hHP-V1-Bg2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qrm-UC-KW4">
+                                <rect key="frame" x="20" y="56" width="39" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Fc6-T4-Ggq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQr-4V-iNe">
+                                <rect key="frame" x="20" y="142" width="43" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hZG-Wm-lJy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ula-Eo-EdH">
+                                <rect key="frame" x="92" y="13" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-JT-t6z">
+                                <rect key="frame" x="92" y="99" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oVA-YI-QzO">
+                                <rect key="frame" x="92" y="142" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="4DE-RD-rcl" firstAttribute="centerX" secondItem="VMu-b3-kgP" secondAttribute="centerX" id="1eX-hA-SnL"/>
                             <constraint firstItem="mil-YJ-BK0" firstAttribute="trailing" secondItem="4DE-RD-rcl" secondAttribute="trailing" constant="65" id="5bY-sI-VI5"/>
                             <constraint firstItem="lgg-Uz-fH9" firstAttribute="leading" secondItem="4DE-RD-rcl" secondAttribute="trailing" id="Bvb-tZ-05w"/>
+                            <constraint firstItem="fgJ-uQ-zna" firstAttribute="top" secondItem="Qrm-UC-KW4" secondAttribute="bottom" constant="9" id="C0X-8Q-wC7"/>
                             <constraint firstItem="4DE-RD-rcl" firstAttribute="leading" secondItem="L6N-GD-Kkx" secondAttribute="trailing" id="DKC-ea-mYx"/>
                             <constraint firstItem="lgg-Uz-fH9" firstAttribute="centerY" secondItem="4DE-RD-rcl" secondAttribute="centerY" id="FCb-pe-9hP"/>
+                            <constraint firstItem="l7t-6h-fhr" firstAttribute="top" secondItem="mil-YJ-BK0" secondAttribute="top" constant="13" id="G9f-bW-lde"/>
                             <constraint firstItem="L6N-GD-Kkx" firstAttribute="leading" secondItem="mil-YJ-BK0" secondAttribute="leading" constant="25" id="H7q-Ab-wyJ"/>
                             <constraint firstItem="mil-YJ-BK0" firstAttribute="trailing" secondItem="6eE-EX-ujZ" secondAttribute="trailing" id="KMs-VQ-fg5"/>
                             <constraint firstItem="mil-YJ-BK0" firstAttribute="bottom" secondItem="4DE-RD-rcl" secondAttribute="bottom" constant="80" id="WHJ-Gq-xId"/>
                             <constraint firstItem="noq-zs-J3F" firstAttribute="centerY" secondItem="VMu-b3-kgP" secondAttribute="centerY" id="XKp-3U-iGM"/>
+                            <constraint firstItem="Qrm-UC-KW4" firstAttribute="top" secondItem="l7t-6h-fhr" secondAttribute="bottom" constant="9" id="XQb-ye-JpG"/>
                             <constraint firstItem="6eE-EX-ujZ" firstAttribute="top" secondItem="mil-YJ-BK0" secondAttribute="top" id="aWo-9y-bDJ"/>
+                            <constraint firstItem="l7t-6h-fhr" firstAttribute="leading" secondItem="mil-YJ-BK0" secondAttribute="leading" constant="20" id="ayI-KV-1DJ"/>
                             <constraint firstItem="4DE-RD-rcl" firstAttribute="centerY" secondItem="L6N-GD-Kkx" secondAttribute="centerY" id="b0E-2I-Up1"/>
+                            <constraint firstItem="Qrm-UC-KW4" firstAttribute="leading" secondItem="mil-YJ-BK0" secondAttribute="leading" constant="20" id="d78-wj-o8E"/>
+                            <constraint firstItem="fgJ-uQ-zna" firstAttribute="leading" secondItem="mil-YJ-BK0" secondAttribute="leading" constant="20" id="hfi-Uu-8Mi"/>
                             <constraint firstItem="4DE-RD-rcl" firstAttribute="leading" secondItem="mil-YJ-BK0" secondAttribute="leading" constant="65" id="jKU-RD-zlV"/>
                             <constraint firstItem="noq-zs-J3F" firstAttribute="top" secondItem="6eE-EX-ujZ" secondAttribute="bottom" constant="22" id="mcO-pn-Z97"/>
                             <constraint firstItem="noq-zs-J3F" firstAttribute="centerX" secondItem="VMu-b3-kgP" secondAttribute="centerX" id="o0e-M6-QtP"/>
                             <constraint firstItem="6eE-EX-ujZ" firstAttribute="leading" secondItem="mil-YJ-BK0" secondAttribute="leading" id="ojU-v2-9P9"/>
+                            <constraint firstItem="PQr-4V-iNe" firstAttribute="top" secondItem="fgJ-uQ-zna" secondAttribute="bottom" constant="9" id="qIy-6O-k5v"/>
+                            <constraint firstItem="PQr-4V-iNe" firstAttribute="leading" secondItem="mil-YJ-BK0" secondAttribute="leading" constant="20" id="szH-oH-bwi"/>
                             <constraint firstAttribute="trailing" secondItem="lgg-Uz-fH9" secondAttribute="trailing" constant="7" id="tQk-eA-2XN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mil-YJ-BK0"/>
@@ -81,31 +149,177 @@
                     <tabBarItem key="tabBarItem" title="Settings" image="gear-7" selectedImage="gear-7" id="ksc-VR-5pB"/>
                     <navigationItem key="navigationItem" id="buF-mU-QHJ"/>
                     <connections>
+                        <outlet property="activityLabelForInput" destination="l7t-6h-fhr" id="lJh-8e-kBD"/>
                         <outlet property="brightnesSlider" destination="4DE-RD-rcl" id="HxO-Em-JeM"/>
+                        <outlet property="highBrightnessIcon" destination="lgg-Uz-fH9" id="HmS-4t-ItG"/>
+                        <outlet property="lowBrightnessIcon" destination="L6N-GD-Kkx" id="yQa-DQ-C2J"/>
+                        <outlet property="repsLabelForInput" destination="PQr-4V-iNe" id="mgs-m7-FUO"/>
                         <outlet property="restLabel" destination="6eE-EX-ujZ" id="Owl-g4-iyT"/>
+                        <outlet property="restLabelForInput" destination="Qrm-UC-KW4" id="L3r-Zx-DDw"/>
+                        <outlet property="setsLabelForInput" destination="fgJ-uQ-zna" id="wlE-Hh-yr1"/>
                         <segue destination="l5t-Vs-BXz" kind="show" identifier="startSegue" id="GhJ-YF-uAW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aHt-Fd-dBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="546.09800362976409" y="15.107913669064748"/>
+            <point key="canvasLocation" x="545.5078125" y="14.934114202049779"/>
+        </scene>
+        <!--MainMenu-->
+        <scene sceneID="fyO-Wl-Lpd">
+            <objects>
+                <menu title="MainMenu" discoverabilityTitle="" identifier="com.apple.menu.root" id="An2-9R-1E3" sceneMemberID="viewController">
+                    <children>
+                        <menu title="Application" discoverabilityTitle="" identifier="com.apple.menu.application" id="5RO-uj-sS4">
+                            <children>
+                                <menu title="About" discoverabilityTitle="" identifier="com.apple.menu.about" id="hd0-Jy-Eh0">
+                                    <commandGroupOptions key="options" displayInline="YES"/>
+                                    <children>
+                                        <command title="About Application" discoverabilityTitle="" propertyListString="" id="4if-M4-1hr">
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" destination="f9g-9w-b2f" id="TLo-lz-ZAd"/>
+                                            </connections>
+                                        </command>
+                                    </children>
+                                </menu>
+                                <menu title="Hide" discoverabilityTitle="" identifier="com.apple.menu.hide" id="jbH-ct-rPC">
+                                    <commandGroupOptions key="options" displayInline="YES"/>
+                                    <children>
+                                        <command title="Hide Application" discoverabilityTitle="" propertyListString="" input="h" id="Xz6-2h-8Cz">
+                                            <keyModifierFlags key="modifierFlags" command="YES"/>
+                                            <connections>
+                                                <action selector="hide:" destination="f9g-9w-b2f" id="HPe-pu-SGs"/>
+                                            </connections>
+                                        </command>
+                                        <command title="Hide Others" discoverabilityTitle="" propertyListString="" input="h" id="Z81-FV-eGm">
+                                            <keyModifierFlags key="modifierFlags" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" destination="f9g-9w-b2f" id="So5-pu-GWe"/>
+                                            </connections>
+                                        </command>
+                                        <command title="Show All" discoverabilityTitle="" propertyListString="" id="XuY-jq-ezA">
+                                            <connections>
+                                                <action selector="unhideAllApplications:" destination="f9g-9w-b2f" id="M3c-JX-Agu"/>
+                                            </connections>
+                                        </command>
+                                    </children>
+                                </menu>
+                                <menu discoverabilityTitle="" identifier="com.apple.menu.quit" id="2TB-yV-crm">
+                                    <commandGroupOptions key="options" displayInline="YES"/>
+                                    <children>
+                                        <command title="Quit Application" discoverabilityTitle="" propertyListString="" input="q" id="ro2-6G-oQN">
+                                            <keyModifierFlags key="modifierFlags" command="YES"/>
+                                            <connections>
+                                                <action selector="terminate:" destination="f9g-9w-b2f" id="b9p-bo-pb1"/>
+                                            </connections>
+                                        </command>
+                                    </children>
+                                </menu>
+                            </children>
+                        </menu>
+                        <menu title="File" discoverabilityTitle="" identifier="com.apple.menu.file" id="YRS-8N-4DS">
+                            <children>
+                                <menu discoverabilityTitle="" identifier="com.apple.menu.close" id="Vqf-hy-Mel">
+                                    <commandGroupOptions key="options" displayInline="YES"/>
+                                    <children>
+                                        <command title="Close" discoverabilityTitle="" propertyListString="" input="w" id="8HS-za-Ouh">
+                                            <keyModifierFlags key="modifierFlags" command="YES"/>
+                                            <alternates>
+                                                <commandAlternate title="Close All" actionName="closeAll:" id="ae2-k3-ged">
+                                                    <keyModifierFlags key="modifierFlags" option="YES"/>
+                                                </commandAlternate>
+                                            </alternates>
+                                            <connections>
+                                                <action selector="performClose:" destination="f9g-9w-b2f" id="u0E-48-AkY"/>
+                                            </connections>
+                                        </command>
+                                    </children>
+                                </menu>
+                                <menu discoverabilityTitle="" identifier="com.apple.menu.print" id="WDE-d8-fjf">
+                                    <commandGroupOptions key="options" displayInline="YES"/>
+                                </menu>
+                            </children>
+                        </menu>
+                        <menu title="View" discoverabilityTitle="" identifier="com.apple.menu.view" id="V5z-L0-baP">
+                            <children>
+                                <menu discoverabilityTitle="" identifier="com.apple.menu.fullscreen" id="HI6-0s-6vD">
+                                    <commandGroupOptions key="options" displayInline="YES"/>
+                                    <children>
+                                        <command title="Enter Full Screen" discoverabilityTitle="" propertyListString="" input="f" id="i6O-Bi-ycf">
+                                            <keyModifierFlags key="modifierFlags" control="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="toggleFullScreen:" destination="f9g-9w-b2f" id="65r-1B-cFG"/>
+                                            </connections>
+                                        </command>
+                                    </children>
+                                </menu>
+                            </children>
+                        </menu>
+                        <menu title="Window" discoverabilityTitle="" identifier="com.apple.menu.window" id="3GO-Yp-deD">
+                            <children>
+                                <menu discoverabilityTitle="" identifier="com.apple.menu.minimize-and-zoom" id="3kf-pc-5Ze">
+                                    <commandGroupOptions key="options" displayInline="YES"/>
+                                    <children>
+                                        <command title="Minimize" discoverabilityTitle="" propertyListString="" input="m" id="DWp-U3-ngE">
+                                            <keyModifierFlags key="modifierFlags" command="YES"/>
+                                            <connections>
+                                                <action selector="performMiniaturize:" destination="f9g-9w-b2f" id="S1A-Gh-p7d"/>
+                                            </connections>
+                                        </command>
+                                        <command title="Zoom" discoverabilityTitle="" propertyListString="" id="MeH-L3-RwA">
+                                            <connections>
+                                                <action selector="performZoom:" destination="f9g-9w-b2f" id="zNv-em-H6Q"/>
+                                            </connections>
+                                        </command>
+                                    </children>
+                                </menu>
+                                <menu discoverabilityTitle="" identifier="com.apple.menu.bring-all-to-front" id="n5b-GG-p1p">
+                                    <commandGroupOptions key="options" displayInline="YES"/>
+                                    <children>
+                                        <command title="Bring All to Front" discoverabilityTitle="" propertyListString="" id="rzp-1K-fZ4">
+                                            <connections>
+                                                <action selector="arrangeInFront:" destination="f9g-9w-b2f" id="58O-EW-fCF"/>
+                                            </connections>
+                                        </command>
+                                    </children>
+                                </menu>
+                            </children>
+                        </menu>
+                        <menu title="Help" discoverabilityTitle="" identifier="com.apple.menu.help" id="Jh6-Zw-fjg">
+                            <children>
+                                <command title="Send Help or Feedback" discoverabilityTitle="" propertyListString="" input="?" id="2rw-xB-EXt">
+                                    <keyModifierFlags key="modifierFlags" command="YES"/>
+                                    <alternates>
+                                        <commandAlternate id="C7I-Xe-wfA"/>
+                                        <commandAlternate id="33p-Iu-shK"/>
+                                    </alternates>
+                                    <connections>
+                                        <action selector="showHelp:" destination="f9g-9w-b2f" id="5kn-R6-dXx"/>
+                                    </connections>
+                                </command>
+                            </children>
+                        </menu>
+                    </children>
+                </menu>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9g-9w-b2f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509" y="-463"/>
         </scene>
         <!--Workout View Controller-->
         <scene sceneID="cgU-rx-mfY">
             <objects>
                 <viewController wantsFullScreenLayout="YES" id="l5t-Vs-BXz" customClass="WorkoutViewController" customModule="Simple_Exersice_Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="od7-Cb-h7y">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iaj-Sm-CJ2">
-                                <rect key="frame" x="113" y="380.5" width="488" height="27"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iaj-Sm-CJ2">
+                                <rect key="frame" x="113" y="309.5" width="190" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uky-dQ-Gfw">
-                                <rect key="frame" x="72" y="637" width="571" height="89.5"/>
+                                <rect key="frame" x="72" y="566" width="273" height="89.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89.670000000000002" id="QLl-UX-i5l"/>
                                 </constraints>
@@ -117,8 +331,8 @@
                                     <action selector="pauseButtonPressed" destination="l5t-Vs-BXz" eventType="touchUpInside" id="qjE-gu-9I1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVQ-zN-BQM" userLabel="countdownLabel">
-                                <rect key="frame" x="228" y="367.5" width="256" height="249"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVQ-zN-BQM" userLabel="countdownLabel">
+                                <rect key="frame" x="79" y="296.5" width="256" height="249"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="249" id="fMY-c2-mVG"/>
                                     <constraint firstAttribute="width" constant="256" id="zWW-FS-wQD"/>
@@ -128,7 +342,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxN-Yu-WQM">
-                                <rect key="frame" x="0.0" y="0.0" width="407" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="164" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="iWl-51-ecj"/>
                                 </constraints>
@@ -143,13 +357,13 @@
                                 <color key="barTintColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </toolbar>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sets Done: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4D-PM-9sO">
-                                <rect key="frame" x="54" y="82" width="573.5" height="27"/>
+                                <rect key="frame" x="54" y="126" width="275.5" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps Done: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdc-BL-6jZ">
-                                <rect key="frame" x="52" y="34" width="573.5" height="27"/>
+                                <rect key="frame" x="52" y="78" width="275.5" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>

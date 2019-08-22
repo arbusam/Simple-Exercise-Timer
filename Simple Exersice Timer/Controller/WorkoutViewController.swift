@@ -79,8 +79,8 @@ class WorkoutViewController: UIViewController {
         
         totalSeconds += 1
         
-        var alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
-        var alertSound2 = Bundle.main.path(forResource: "Bleep-noise", ofType: "mp3")
+        let alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
+        let alertSound2 = Bundle.main.path(forResource: "Bleep-noise", ofType: "mp3")
         
         
         do {
@@ -203,8 +203,8 @@ class WorkoutViewController: UIViewController {
         pauseButton.isHidden = false
         pauseButton.isEnabled = true
         
-        var alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
-        var alertSound2 = Bundle.main.path(forResource: "Bleep-noise", ofType: "mp3")
+        let alertSound = Bundle.main.path(forResource: "Censored_Beep-Mastercard-569981218", ofType: "mp3")
+        let alertSound2 = Bundle.main.path(forResource: "Bleep-noise", ofType: "mp3")
         
         
         do {
@@ -357,12 +357,12 @@ class WorkoutViewController: UIViewController {
             timer.invalidate()
             pause = true
             print(pause)
-            workoutEvents.append(HKWorkoutEvent(type: .pause, date: NSDate() as Date))
+            workoutEvents.append(HKWorkoutEvent(type: .pause, dateInterval: DateInterval() as DateInterval, metadata: nil))
             pauseButton.setImage(UIImage(named: "play"), for: .normal)
             
         } else {
             
-            workoutEvents.append(HKWorkoutEvent(type: .resume, date: NSDate() as Date))
+            workoutEvents.append(HKWorkoutEvent(type: .resume, dateInterval: DateInterval(), metadata: nil))
             
             if exersicing == true {
                 timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(WorkoutViewController.activityClock), userInfo: nil, repeats: true)
