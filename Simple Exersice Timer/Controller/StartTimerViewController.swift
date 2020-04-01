@@ -13,8 +13,13 @@ import HealthKit
 class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, MFMailComposeViewControllerDelegate {
     
     var activityData:[String] = [String]()
+    var restData:[String] = [String]()
+    var setData:[String] = [String]()
+    var repData:[String] = [String]()
     
     var text = "Succces"
+    
+    let methods = Methods()
     
     let defaults = UserDefaults.standard
     
@@ -33,9 +38,17 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
         
         brightnesSlider.value = Float(UIScreen.main.brightness)
         
+        activityData.append("Action")
+        restData.append("Break")
+        repData.append("Sets")
+        setData.append("Reps")
+        
         for i in 1...60 {
             print(i)
             activityData.append("\(i)")
+            restData.append("\(i)")
+            setData.append("\(i)")
+            repData.append("\(i)")
         }
         print(activityData)
         restLabel.selectRow(defaults.integer(forKey: "dropdownActivity"), inComponent: 0, animated: true)
@@ -85,7 +98,17 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
-        return activityData[row]
+        if component == 0 {
+            return activityData[row]
+        } else if component == 1 {
+            return restData[row]
+        } else if component == 2 {
+            return setData[row]
+        } else if component == 3 {
+            return repData[row]
+        } else {
+            fatalError("Could not create the row \(component)")
+        }
         
     }
     
@@ -119,47 +142,23 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
     @IBAction func startButtonPressed() {
-<<<<<<< Updated upstream
-//        text = "Succces"
-//        let alert = UIAlertController(title: "Alert", message: "All your values have to contain something.", preferredStyle: UIAlertController.Style.alert)
-//        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-//
-//        if activityValue != 0 {
-//            print("Working")
-//        } else {
-//            text = "Failed"
-//            self.present(alert, animated: true, completion: nil)
-//
-//        }
-//        if text != "Failed" {
-//            if restValue != 0 {
-//                print("Working")
-//            } else {
-//                text = "Failed"
-//                self.present(alert, animated: true, completion: nil)
-//            }
-//            if text != "Failed" {
-//                if repsValue != 0 {
-//                    print("Working")
-//                } else {
-//                    text = "Failed"
-//                    self.present(alert, animated: true, completion: nil)
-//                }
-//                if text != "Failed" {
-//                    if setsValue != 0 {
-//                        print("Working")
-//                    } else {
-//                        text = "Failed"
-//                        self.present(alert, animated: true, completion: nil)
-//                    }
-//                }
-//            }
-//        }
-//        if text == "Succces" {
+        text = "Succces"
+        let alert = UIAlertController(title: "Alert", message: "All your values have to contain something.", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+
+        if activityValue != 0 {
+            print("Working")
+        } else {
+            text = "Failed"
+            self.present(alert, animated: true, completion: nil)
+
+        }
+        
+        if methods.validateSettings(activity: activityValue, rest: restValue, sets: setsValue, reps: repsValue) == true {
             performSegue(withIdentifier: "startSegue", sender: self)
-//        } else {
-//            print(text)
-//        }
+        } else {
+            self.present(alert, animated: true, completion: nil)
+        }
         
     }
     
@@ -168,10 +167,12 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
 
             let workoutVC = segue.destination as! WorkoutViewController
 
-            workoutVC.activity = String(activityValue + 1)
-            workoutVC.rest = String(restValue + 1)
-            workoutVC.reps = String(repsValue + 1)
-            workoutVC.sets = String(setsValue + 1)
+            workoutVC.activity = String(activityValue)
+            workoutVC.rest = String(restValue)
+            workoutVC.reps = String(repsValue)
+            workoutVC.sets = String(setsValue)
+            
+            workoutVC.modalPresentationStyle = .fullScreen
 
 //            self.defaults.set(workoutVC.activity, forKey: "activity")
 //            self.defaults.set(workoutVC.rest, forKey: "rest")
@@ -191,34 +192,35 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
 //
 //    }
     
-    func configureMailController() -> MFMailComposeViewController {
-        
-        let mailComposerVC = MFMailComposeViewController()
-        mailComposerVC.mailComposeDelegate = self
-        
-        mailComposerVC.setToRecipients(["ab.apphelp@gmail.com"])
-        mailComposerVC.setSubject("Help with Simple Exercise Timer")
-        mailComposerVC.setMessageBody("I need help with the app Simple Exercise Timer \n I need help with: \n", isHTML: false)
-        
-        return mailComposerVC
-        
-    }
+    //TODO: Feedback
+//    func configureMailController() -> MFMailComposeViewController {
+//
+//        let mailComposerVC = MFMailComposeViewController()
+//        mailComposerVC.mailComposeDelegate = self
+//
+//        mailComposerVC.setToRecipients(["ab.apphelp@gmail.com"])
+//        mailComposerVC.setSubject("Help with Simple Exercise Timer")
+//        mailComposerVC.setMessageBody("I need help with the app Simple Exercise Timer \n I need help with: \n", isHTML: false)
+//
+//        return mailComposerVC
+//
+//    }
     
-    func showMailError() {
-        
-        let mailErrorAlert = UIAlertController(title: "Could not send email", message: "There was an error sending the email.", preferredStyle: .alert)
-        
-        let dismiss = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        
-        mailErrorAlert.addAction(dismiss)
-        
-        self.present(mailErrorAlert, animated: true, completion: nil)
-        
-    }
-    
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true, completion: nil)
-    }
+//    func showMailError() {
+//
+//        let mailErrorAlert = UIAlertController(title: "Could not send email", message: "There was an error sending the email.", preferredStyle: .alert)
+//
+//        let dismiss = UIAlertAction(title: "Ok", style: .default, handler: nil)
+//
+//        mailErrorAlert.addAction(dismiss)
+//
+//        self.present(mailErrorAlert, animated: true, completion: nil)
+//
+//    }
+//
+//    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+//        controller.dismiss(animated: true, completion: nil)
+//    }
     
 }
 
