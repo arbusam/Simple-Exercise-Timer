@@ -9,5 +9,6 @@ target 'Simple Exersice Timer' do
 
     pod 'SVProgressHUD'
     pod 'ChameleonFramework'
+    pod 'MBCircularProgressBar'
 
 end

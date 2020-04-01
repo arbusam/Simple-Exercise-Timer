@@ -2,21 +2,26 @@ PODS:
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
+  - MBCircularProgressBar (0.3.5)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - ChameleonFramework
+  - MBCircularProgressBar
   - SVProgressHUD
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - ChameleonFramework
     - SVProgressHUD
+  trunk:
+    - MBCircularProgressBar
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: bb585957fe13bc13fb09a0fdb197ba6489f5dc4d
+PODFILE CHECKSUM: d33179f4202e655eb95b5f7fd505da536725df25
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.1

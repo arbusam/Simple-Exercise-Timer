@@ -7,273 +7,373 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00602837C4EB370BECF8CAB6371ECE31 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AA389C0087BFD68032FEACEE851F8F8 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05353EB6A0D574C297CA91E460787437 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AABFE60463C3AF51CB267EA82A0CCF3 /* Foundation.framework */; };
-		0A3C05C3B28CB4272BAE0E3CFB8C89A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B864BFE95FAE118C4C3A52725C9B261 /* UIKit.framework */; };
-		0C757876350939D4F88841D334DA7E24 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B2EE1BEB6849EC86C048F7B8A09FAC7 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12A4DE37D77247F5370AB63BDCA673FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D5053F2A5215D7472A947EDE5B61B6 /* CoreGraphics.framework */; };
-		15F0014C0BEA7851808563FBCC24BF2A /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A680F664432A2D01BB269ADBC49741 /* UIColor+ChameleonPrivate.m */; };
-		1CD766F0A62D4D98C3E2AA1665612B79 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D29F915D2D979D99C8C436A4543590D /* SVProgressAnimatedView.m */; };
-		1D8A6745E83737F957F7E57E5C8260B8 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D810F9ACFB425F68E0AB2F52F167F /* UIImage+ChameleonPrivate.m */; };
-		1E1A98F0AB97D3A1503581764D51D911 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CB8567A0D185661EB6D71EC90092AD05 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21B4826A1FB82735FF9327D3FD2C367E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AABFE60463C3AF51CB267EA82A0CCF3 /* Foundation.framework */; };
-		262D8EE8EDE3BCBA0ED251A7EB07D2D0 /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE43FE4BF2758D62A42D86A502EF52D /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2917EED3818D9360D8021F138D2456D7 /* Pods-Simple Exersice Timer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3B1EAAC90A5B0D451F733B4348014D /* Pods-Simple Exersice Timer-dummy.m */; };
-		2EE5B045F1375CD975DA453B4CCEDDF5 /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F73E2B9F6E96D504EDA89C2647CEFD /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		323D7E9FA828976CA1F11C04D6925E20 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 447FEF95B2355AD4E27D07CDB6FEAFE5 /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AE2F2868A4D4AB5563B541B3E67E8D4 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFDD729C055D6565B17CF262B29299B /* UIViewController+Chameleon.m */; };
-		403A73817F8102D2DBE37B02F486147D /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DFC6BB4C3BF0E9D4E67CB100B339D9C8 /* SVProgressHUD.bundle */; };
-		43D7084EA0E144EAA0C3CC21CF669ADE /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 53A5091453EDC0406CE7FB8E6C1D420E /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E5874554B3C0473C812050877F4F85E /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = DE2E52A411B2BC0A20209375576347EE /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50542FD7A9FC39FF46C5D499E4B1E5A9 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5854E39257ACD6CD0E5F1D5473D7DEE0 /* NSArray+Chameleon.m */; };
-		544B9E54D436D52038968208CAF89065 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3258731537C930990FF77D4049C9EE2E /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DE5B5F0E5F11A609D14CAB6B620DE92 /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D953A51FA3E8B86C2112AED2E35D02 /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63228F2E19EEE517EF275E646EDCB074 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE88BAD46917BCB71DB78D33D500EEE /* SVProgressHUD-dummy.m */; };
-		6A0F06AC9E5E706557330AAB7B7343FA /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E4E14F8CCB08DE072C1C054F08B0DC /* UIView+ChameleonPrivate.m */; };
-		6DDA3FAF91891AEBF85D69500274B6FD /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 975BEB2D9E1694C4BF52217F0BF1516C /* SVIndefiniteAnimatedView.m */; };
-		734927E607D9713A8D74F5D422F726C2 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8698CF09179D5D8B9CE7ADCF7D4638D4 /* UIColor+Chameleon.m */; };
-		77C14A352FD99DAEEEDA80252768B569 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AAEFE67E0855F615529B373BF510B7 /* ChameleonConstants.m */; };
-		89E8C6274726E8F9FF374D622362D8D7 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF1718E47C4C828B5F22B6CB9C43005 /* UIButton+Chameleon.m */; };
-		8C72371AC1A753865275F8B7D43AB845 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BDAC107A67D1D81B2AA4ADC03637C23 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96DF18A1A821E84B3B5A08C64CB35721 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D218D9BB4D4983FC1260E92B115DFFD /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BF027F3840EC10E9C57675B2053F5DB /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C163852D0B6C5BBF7802DCB52186554 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ED66BF512CD86548C98C36238E0CCAE /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = EEEBD0C5868D9F070AB10C849F217310 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F654055921251082EE11721B3B3BF45 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D93166A09FEE9FE15AE1EAA43087974 /* ChameleonFramework-dummy.m */; };
-		A26C40DA9CEE3F886E3202801805C986 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AABFE60463C3AF51CB267EA82A0CCF3 /* Foundation.framework */; };
-		A5F19A3D5D3DF3BCB4EB600F6DFF8CF3 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F6F57A117BE35618A867071D29A174 /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8E86B459287DF9D842CCE092B5FB5C7 /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 920F154A1498BBC2FF6B319012D2384E /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADAF8E422C9358A9E7C7E976AB426981 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F18C0D84365F1DC95ED0049959ED8AB9 /* SVRadialGradientLayer.m */; };
-		B33A516305B708BCB33E2A301677BB69 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2255CAF6F0795140CA613AF4575BB1BA /* UINavigationController+Chameleon.m */; };
-		B7E9269D9E23A2F3D80ED1E12E6A7915 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C5248F3F8F5DD6FF2489BCA891824D /* QuartzCore.framework */; };
-		B8AE8DBFD1DE77694732B56BC1CDED56 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ECEC85C96362E9459FA508C644EB19 /* SVProgressHUD.m */; };
-		BCE77F19E17B87B4E2778BEB45DA06E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C5248F3F8F5DD6FF2489BCA891824D /* QuartzCore.framework */; };
-		C080488DCC1ACBC7FD2D5FA644B0DFDC /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = A8616F8939E733D3E9CAF33326BB1E02 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C10841CBCE21B36A029EED967D2463D6 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B2DD00089BC9B2618CAFE41CB2B76E /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBE56BB61C19AB8878C6163DEAEB5DF5 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = C83A207F056DFCAA0E6654F7A6D64FB0 /* UIAppearance+Swift.m */; };
-		CD48A584D2186FAA3596DF7CEA4A1DF3 /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4516B47F5BA7B82AC0184B8CC4FDA298 /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D00F97846CA8B8E875F66CDEC92C8CCC /* Pods-Simple Exersice Timer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C06D1D529003D812904EBBF7CFD3A7 /* Pods-Simple Exersice Timer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC1607222E3497E24B168C1E564577DE /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BC8B998E49A4C7F752499CE66139FFB /* Chameleon_.m */; };
-		F988D4BAD9A90D9EE4D3F6CE836935AC /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0563399E7B9C14A8223A80F401C43E10 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC9CC7DA9398391736887E00ECD7D36E /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A889C7A8B94DF389366E16BB49E73D /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFEC85DAE1C4E08F4A75EDA85D8A9A7D /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4965E861D81DEA30614F2DCBA25799FC /* UILabel+Chameleon.m */; };
+		05C80A3CD8FD854B9BDE8D6EAD982EB6 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC01193BBCC5BA6D5EA922708720D7 /* UIColor+Chameleon.m */; };
+		0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E9619AD32B9688140D2D7E311E21D908 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14390333BA1D71FD5E7B76AD2CF32C04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BBEAB859C48569C695B0B3FB39F6F9 /* UIKit.framework */; };
+		1E797CC4D406A37AE198331BB404DEB9 /* ChameleonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E5E488E901BF7269C8435D2A012E9D4 /* ChameleonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F697A793912CF20E30972DF4C5F4712 /* ChameleonFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B41B639A1733A2A4B3E58E82E88B3 /* ChameleonFramework-dummy.m */; };
+		1FEB18B6FFD35302FF08C453491FBFE3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009A3CF530BDED85FCFB71F2D51670CA /* QuartzCore.framework */; };
+		23D4ABA1F1A08969C754D10176B897D2 /* ChameleonEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E22C37BC60CD2184B111F2BD59F049 /* ChameleonEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC66FCFA87CBE1F3737BF148AD5DCC48 /* SVProgressHUD.bundle */; };
+		3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 51AACF00A1AA2A34A94780EF455A3672 /* SVProgressHUD.m */; };
+		3412A9E0D9B130A246008AB317F397C6 /* MBCircularProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF006250BD93A62118622EB4AF3A6B6A /* MBCircularProgressBar-dummy.m */; };
+		36CF9EE59E7A59CA6B9D4A08A2686F7B /* Pods-Simple Exersice Timer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F26F99E4638CCAA472D376DDD603BE28 /* Pods-Simple Exersice Timer-dummy.m */; };
+		3A3553172238440378F337D6395AE7FB /* UINavigationController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4CB30E44629C367257E7F66977A1D6 /* UINavigationController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		408D4F0B074B75C2990813B29A630223 /* NSArray+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C3AEDC44A43001932CDCE70AA3D15F /* NSArray+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43486AB02F80F684F2DE24B038862DE6 /* UIAppearance+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = F87A75C24B3713658727EAD1FD19CA8A /* UIAppearance+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4953ABDB7763BF30E7BDF612A41540A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */; };
+		4DE488981D3BC23926AE78D6A8E4D690 /* ChameleonConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E090160C8C135AAE7F60DF17C8339F6 /* ChameleonConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F84370C42840B7CCE842A25EAD9614D /* UIButton+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1197D348512EAEF021D519D075314FEF /* UIButton+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52E9D93117DB574F467F4FE5FE34814B /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CAA8DE45519EC79D3E068B7290FD06 /* UIColor+ChameleonPrivate.m */; };
+		6923F7A1C8D1955C762B0BAFD37AEF39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC52B314F24BC32CDA7B523FAA24A727 /* CoreGraphics.framework */; };
+		71F34A5F16965FA53B937277C3001FF3 /* Pods-Simple Exersice Timer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4212362A764448A0EC0319BD3F2590 /* Pods-Simple Exersice Timer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79AEE663185F871492A4830BFC8CCA8C /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D0AD8CE16C7FF2C7B0AF57759E83D3 /* UIButton+Chameleon.m */; };
+		7E1C14151759CAF5CFA9B59DF4360E18 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC16A95E439938897C5E99DE69E90EA /* UINavigationController+Chameleon.m */; };
+		807C65955C0AF5A51E8ACBBAAA227783 /* ChameleonFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ABF4329E725D3551BCB62E3FC6B8ADC /* ChameleonFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8973C3894627094AA75B5CFB7C6726B6 /* UIViewController+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = CC2EB066ACB89DB204F5F3243D8FFBB8 /* UIViewController+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91EF3995BC20261A8CD5F07F781309C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */; };
+		96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFC2E34A0D4D42A5B6FF357550CA9C6 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		993D2B7B12E15E7D29540C93A8F32398 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3E601075DE78A70C67C8BE83C21EE /* ChameleonConstants.m */; };
+		99456829035D2883017E8EBCDB82C231 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009A3CF530BDED85FCFB71F2D51670CA /* QuartzCore.framework */; };
+		9BF6F565B4EFD76D29301A2E956F0611 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2336BE3A0B08DA9516A5FEDD13119DE /* UIView+ChameleonPrivate.m */; };
+		9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C35C8307C1273DB0693F3EE89502B432 /* SVProgressHUD-dummy.m */; };
+		A21C1018A91827ABB74627A97B0F29A7 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 87651CB60E5483242BF0ADEC646E68D1 /* NSArray+Chameleon.m */; };
+		A3C4576FEAD52B788720ED84A45C0211 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D628462A999AC651953E4999D8A564 /* UIAppearance+Swift.m */; };
+		A8D190DBB6AC3C998FCA54EC810EDE25 /* MBCircularProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D962735B70DB5664CD6BC4456EA924 /* MBCircularProgressBarView.m */; };
+		AB9D965B65BC895FC66AEF8568B7F45E /* UILabel+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 93BE726A1EFAED1C7F877410A8076B9C /* UILabel+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF35DEA9B9504FF10DCB6318A5F4741C /* MBCircularProgressBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7CB12AE789452060456EBCEC68360820 /* MBCircularProgressBar.bundle */; };
+		B2951C6401A44274F96893ACEA23B734 /* MBCircularProgressBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = D48E7D80150CEDE09306AE829CBE0BFF /* MBCircularProgressBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B391B5795F1527C453904641A5A61AF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */; };
+		B5B78B08A40B48EA2EF14C54DB496BFF /* MBCircularProgressBarLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6422A84475D2889A46E0BD07EE84303B /* MBCircularProgressBarLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B779F2D6F5C9106348130245046FDC /* SVIndefiniteAnimatedView.m */; };
+		B6E3EA9E5C841DE01821FB720A68020D /* UIImage+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 68936C3871EFC0B28B344E34DF93377D /* UIImage+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAE5D1087D992145E42527B389C87E71 /* Chameleon_.h in Headers */ = {isa = PBXBuildFile; fileRef = 695DC026A339274D6C31325AEE0BD0DB /* Chameleon_.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDA69A6E4217DD12474241E06C0D4A40 /* UIColor+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A91E171D424F1DB2393C53D3AAE58F39 /* UIColor+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FF02F636CA4C9261D86DD6EF074ABE /* SVRadialGradientLayer.m */; };
+		D4839F67BE8C69F43BD112E09BEA4173 /* Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F96054213417666DB25A46615E2DF16 /* Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4914107FF5A197B9D0BC6D1C089E33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */; };
+		D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B458FF47FBF8FB7752AB8A807417150 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D929BA37AA35F7FC5F94774B92DD4A45 /* MBCircularProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80A9B2C5161AC5718FBD1EC955AA98A3 /* MBCircularProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA750978A4500BC1F43E866E11B9D761 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF393412C15EB9A5D2A4C2A62A15680 /* UILabel+Chameleon.m */; };
+		DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA5D30DC931DF15AF239DAB1384B3C3 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F7F35F2171FBF3990CC70D2B8BE9E1 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2072177AFAEFE3EFDABDB8D5F1193C2 /* MBCircularProgressBarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB65B8E5A9E2581CD84DDF4BBCAD57E /* MBCircularProgressBarLayer.m */; };
+		E669B08C4915DB763FAF5FCA7E50D08C /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = F2FA56D35BBD218394353821C71CFEA2 /* example.png */; };
+		E68A8B502EB99C9BD05510FFD2C3C8EC /* UIColor+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0D516E63BDB8D4C07A8195123D9A3F /* UIColor+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC8BB06D1A94F3DBCB1D3BC2FC9EFBDD /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EFBDE21CC3EFA73B7DE03D136A45D3 /* UIImage+ChameleonPrivate.m */; };
+		EE871A9D93624B9DBEC9C2CB90B4D8E3 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 262806485D49B6560BB4AB6127AF6C13 /* Chameleon_.m */; };
+		EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E1C17DC9AA4181806C9E04FE22D0D6 /* SVProgressAnimatedView.m */; };
+		F474820DE7AFC5D42AA97A908ED9C5B3 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A4080ABAA5B8DC4CA990D149D4C95 /* UIViewController+Chameleon.m */; };
+		F534309C29DB4B4F0B566CB040386059 /* UIView+ChameleonPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F1BF11C094EC6E93A21F1AB4782409 /* UIView+ChameleonPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6BAA4FD4D7781597DF0896D01B91FB44 /* PBXContainerItemProxy */ = {
+		0F6BF77F4284A28B473B0980CB3B59C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FD54107E7245FA53414FB17E280DD202;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
 			remoteInfo = SVProgressHUD;
 		};
-		7AD94C6AF10201859A52BFA7205A9AAF /* PBXContainerItemProxy */ = {
+		43C450738EE6ABCED7348E40E32EB463 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDA4920E0F0355D615535EC440A51F7A;
+			remoteGlobalIDString = 28BFDC89BA4363F4F3576DEC70EE10AE;
 			remoteInfo = ChameleonFramework;
+		};
+		575BC4B36297224E6810F869EB0E07AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46FA1E1D7ABC29B96888E2D9085D474F;
+			remoteInfo = MBCircularProgressBar;
+		};
+		7A3839CC7C71DC1A849358F16D5182FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BA5E348E64AFAB335EC680A67122E64;
+			remoteInfo = "MBCircularProgressBar-MBCircularProgressBar";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00ECEC85C96362E9459FA508C644EB19 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		0563399E7B9C14A8223A80F401C43E10 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		06A92CD5F293B9E0175DDA01F331724A /* Pods-Simple Exersice Timer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simple Exersice Timer-frameworks.sh"; sourceTree = "<group>"; };
-		1098B6F36ED195587DF424D732C46F20 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
-		17D5053F2A5215D7472A947EDE5B61B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		1B7D810F9ACFB425F68E0AB2F52F167F /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		1B864BFE95FAE118C4C3A52725C9B261 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		1BC8B998E49A4C7F752499CE66139FFB /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
-		1FE43FE4BF2758D62A42D86A502EF52D /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
-		20D759E8CCD3D9352ADD133BA2C878C1 /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
-		2255CAF6F0795140CA613AF4575BB1BA /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
-		23C825A1D0DD2EC1BBD929C6B7B91BA5 /* Pods-Simple Exersice Timer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simple Exersice Timer-acknowledgements.plist"; sourceTree = "<group>"; };
-		294E679365A0E62A3B2C4B82B06FDD2F /* ChameleonFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChameleonFramework-Info.plist"; sourceTree = "<group>"; };
-		2D218D9BB4D4983FC1260E92B115DFFD /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		2DF68A042C608B7F285EC422BCBE1866 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		30C5248F3F8F5DD6FF2489BCA891824D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		3258731537C930990FF77D4049C9EE2E /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
-		37D953A51FA3E8B86C2112AED2E35D02 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
-		3B2EE1BEB6849EC86C048F7B8A09FAC7 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
-		3D29F915D2D979D99C8C436A4543590D /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		447FEF95B2355AD4E27D07CDB6FEAFE5 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		4516B47F5BA7B82AC0184B8CC4FDA298 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		45E4E14F8CCB08DE072C1C054F08B0DC /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		46523B7C10DAEDFBE4072E99C231CE3F /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46B2DD00089BC9B2618CAFE41CB2B76E /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		48AAEFE67E0855F615529B373BF510B7 /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
-		48BE22A347396CC4B5A14D79F1F47161 /* Pods-Simple Exersice Timer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Simple Exersice Timer.modulemap"; sourceTree = "<group>"; };
-		4965E861D81DEA30614F2DCBA25799FC /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
-		4AABFE60463C3AF51CB267EA82A0CCF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4C163852D0B6C5BBF7802DCB52186554 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		526CB87DC59EEACC8596E6642275E046 /* Pods-Simple Exersice Timer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Simple Exersice Timer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		53A5091453EDC0406CE7FB8E6C1D420E /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
-		5854E39257ACD6CD0E5F1D5473D7DEE0 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		5BDAC107A67D1D81B2AA4ADC03637C23 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		6713AB18FD1FE674870DD70DD5117C1E /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
-		6796840A119873EC4F69A111AC8C7AA3 /* Pods-Simple Exersice Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simple Exersice Timer.release.xcconfig"; sourceTree = "<group>"; };
-		76A680F664432A2D01BB269ADBC49741 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
-		7AA389C0087BFD68032FEACEE851F8F8 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		7EFDD729C055D6565B17CF262B29299B /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
-		8698CF09179D5D8B9CE7ADCF7D4638D4 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
-		8D93166A09FEE9FE15AE1EAA43087974 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
-		920F154A1498BBC2FF6B319012D2384E /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		96F6F57A117BE35618A867071D29A174 /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
-		975BEB2D9E1694C4BF52217F0BF1516C /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		9793EF0E68523B1382A36BF5AD37740C /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
-		9988860B07C770F3CB540BEA73D68D1E /* Pods_Simple_Exersice_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Simple_Exersice_Timer.framework; path = "Pods-Simple Exersice Timer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A3B1EAAC90A5B0D451F733B4348014D /* Pods-Simple Exersice Timer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Simple Exersice Timer-dummy.m"; sourceTree = "<group>"; };
+		009A3CF530BDED85FCFB71F2D51670CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		03353E0197BDF44F043FD09B750EA7BA /* Pods-Simple Exersice Timer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simple Exersice Timer-Info.plist"; sourceTree = "<group>"; };
+		0383903D05EDD5C442C682C1F7A1752D /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABF4329E725D3551BCB62E3FC6B8ADC /* ChameleonFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-umbrella.h"; sourceTree = "<group>"; };
+		0E5E488E901BF7269C8435D2A012E9D4 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
+		0F96054213417666DB25A46615E2DF16 /* Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon.h; path = "Pod/Classes/Objective-C/Chameleon.h"; sourceTree = "<group>"; };
+		1197D348512EAEF021D519D075314FEF /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		12D0AD8CE16C7FF2C7B0AF57759E83D3 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		1AF393412C15EB9A5D2A4C2A62A15680 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Chameleon.m"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2087511EE359771AC815296FF946ADE7 /* Pods-Simple Exersice Timer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Simple Exersice Timer.modulemap"; sourceTree = "<group>"; };
+		262806485D49B6560BB4AB6127AF6C13 /* Chameleon_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Chameleon_.m; path = "Pod/Classes/Objective-C/Chameleon_.m"; sourceTree = "<group>"; };
+		26F1BF11C094EC6E93A21F1AB4782409 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		2E090160C8C135AAE7F60DF17C8339F6 /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
+		38E1C17DC9AA4181806C9E04FE22D0D6 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		3A39F6B4389647982371292D89AAE9E3 /* Pods-Simple Exersice Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simple Exersice Timer.release.xcconfig"; sourceTree = "<group>"; };
+		3BBC01193BBCC5BA6D5EA922708720D7 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Chameleon.m"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		46EFBDE21CC3EFA73B7DE03D136A45D3 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		4CEEF56C6E37420EFCD5D6DE7881AADA /* Pods_Simple_Exersice_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Simple_Exersice_Timer.framework; path = "Pods-Simple Exersice Timer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4212362A764448A0EC0319BD3F2590 /* Pods-Simple Exersice Timer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Simple Exersice Timer-umbrella.h"; sourceTree = "<group>"; };
+		4EB65B8E5A9E2581CD84DDF4BBCAD57E /* MBCircularProgressBarLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarLayer.m; path = Pod/Classes/MBCircularProgressBarLayer.m; sourceTree = "<group>"; };
+		502A4080ABAA5B8DC4CA990D149D4C95 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Chameleon.m"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		5094AF7977B0E5E46F66EC6DA8115275 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		51AACF00A1AA2A34A94780EF455A3672 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		521FBC17D0E1E7A60C83F7F286F7E062 /* ChameleonFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ChameleonFramework-Info.plist"; sourceTree = "<group>"; };
+		56D962735B70DB5664CD6BC4456EA924 /* MBCircularProgressBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarView.m; path = Pod/Classes/MBCircularProgressBarView.m; sourceTree = "<group>"; };
+		5BC16A95E439938897C5E99DE69E90EA /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Chameleon.m"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		617472B6104246F10B25628CFC84DD05 /* MBCircularProgressBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBCircularProgressBar-Info.plist"; sourceTree = "<group>"; };
+		61E22C37BC60CD2184B111F2BD59F049 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
+		640B2CA36D53D84D0129B12A7FAC2E0B /* MBCircularProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBCircularProgressBar.framework; path = MBCircularProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6422A84475D2889A46E0BD07EE84303B /* MBCircularProgressBarLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarLayer.h; path = Pod/Classes/MBCircularProgressBarLayer.h; sourceTree = "<group>"; };
+		6553D4C649E44E77C26A70E65277912F /* MBCircularProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		68936C3871EFC0B28B344E34DF93377D /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		695DC026A339274D6C31325AEE0BD0DB /* Chameleon_.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Chameleon_.h; path = "Pod/Classes/Objective-C/Chameleon_.h"; sourceTree = "<group>"; };
+		6F53AE9841021EBD9F503978E5A47051 /* MBCircularProgressBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCircularProgressBar.debug.xcconfig; sourceTree = "<group>"; };
+		6F91CA8938FAA32CBC3AA44DF50B4793 /* SVProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		71BBEAB859C48569C695B0B3FB39F6F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		71C3AEDC44A43001932CDCE70AA3D15F /* NSArray+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Chameleon.h"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		73FF02F636CA4C9261D86DD6EF074ABE /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		780937F269000A8C46A98E035FF16697 /* Pods-Simple Exersice Timer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Simple Exersice Timer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7CB12AE789452060456EBCEC68360820 /* MBCircularProgressBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MBCircularProgressBar.bundle; path = "MBCircularProgressBar-MBCircularProgressBar.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DA5D30DC931DF15AF239DAB1384B3C3 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		80A9B2C5161AC5718FBD1EC955AA98A3 /* MBCircularProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		80F7F35F2171FBF3990CC70D2B8BE9E1 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		87651CB60E5483242BF0ADEC646E68D1 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Chameleon.m"; path = "Pod/Classes/Objective-C/NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		8A1E93C879A8993BE4233F23950632BE /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		8A4CB30E44629C367257E7F66977A1D6 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Chameleon.h"; path = "Pod/Classes/Objective-C/UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		8C49EF7B6D2D050C2258FC7E144F34C7 /* SVProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		8D0B41B639A1733A2A4B3E58E82E88B3 /* ChameleonFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ChameleonFramework-dummy.m"; sourceTree = "<group>"; };
+		920889420623C09DB9BE5C5DEDE2B502 /* MBCircularProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBCircularProgressBar.modulemap; sourceTree = "<group>"; };
+		93B779F2D6F5C9106348130245046FDC /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		93BE726A1EFAED1C7F877410A8076B9C /* UILabel+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Chameleon.h"; path = "Pod/Classes/Objective-C/UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		94773E1687EF88B332E5933FD8F2881D /* ChameleonFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.debug.xcconfig; sourceTree = "<group>"; };
+		9715FC5BEA770B6500D80EBF52A55AE3 /* ChameleonFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ChameleonFramework-prefix.pch"; sourceTree = "<group>"; };
+		97D628462A999AC651953E4999D8A564 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		9B458FF47FBF8FB7752AB8A807417150 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		9CE2DA2620A2F2464FCE38282D466C13 /* Pods-Simple Exersice Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simple Exersice Timer.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1C06D1D529003D812904EBBF7CFD3A7 /* Pods-Simple Exersice Timer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Simple Exersice Timer-umbrella.h"; sourceTree = "<group>"; };
-		A5DD4606DE55CCD0553C87E3B106A8BE /* ChameleonFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ChameleonFramework.framework; path = ChameleonFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8616F8939E733D3E9CAF33326BB1E02 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		B5A889C7A8B94DF389366E16BB49E73D /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
-		B870328948094D5B6AEAB31ADD4A2C6A /* ChameleonFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.xcconfig; sourceTree = "<group>"; };
-		C83A207F056DFCAA0E6654F7A6D64FB0 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAppearance+Swift.m"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.m"; sourceTree = "<group>"; };
-		CB8567A0D185661EB6D71EC90092AD05 /* ChameleonMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonMacros.h; path = "Pod/Classes/Objective-C/ChameleonMacros.h"; sourceTree = "<group>"; };
-		D5C2BE73F49A662C8D8B6A218AE7FC4D /* Pods-Simple Exersice Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Simple Exersice Timer.debug.xcconfig"; sourceTree = "<group>"; };
-		DE2E52A411B2BC0A20209375576347EE /* ChameleonConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonConstants.h; path = "Pod/Classes/Objective-C/ChameleonConstants.h"; sourceTree = "<group>"; };
-		DFC6BB4C3BF0E9D4E67CB100B339D9C8 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
-		E4B3DAE7534AAC90106F789C6ADB4802 /* Pods-Simple Exersice Timer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simple Exersice Timer-Info.plist"; sourceTree = "<group>"; };
-		E9F5A729F2F256BDFD930502695CA95F /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		EEE88BAD46917BCB71DB78D33D500EEE /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		EEEBD0C5868D9F070AB10C849F217310 /* ChameleonEnums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ChameleonEnums.h; path = "Pod/Classes/Objective-C/ChameleonEnums.h"; sourceTree = "<group>"; };
-		F18C0D84365F1DC95ED0049959ED8AB9 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		F6F73E2B9F6E96D504EDA89C2647CEFD /* UIButton+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Chameleon.h"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.h"; sourceTree = "<group>"; };
-		FCF1718E47C4C828B5F22B6CB9C43005 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Chameleon.m"; path = "Pod/Classes/Objective-C/UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		A91E171D424F1DB2393C53D3AAE58F39 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ChameleonPrivate.h"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		AD341C6E035CF3F739D8E30DE341CCA9 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		B2CAA8DE45519EC79D3E068B7290FD06 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		B6388EFEC90FB3CF8E1CD7690514AAED /* ChameleonFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ChameleonFramework.release.xcconfig; sourceTree = "<group>"; };
+		BA51F8201DFBA886A512922AE17DA445 /* Pods-Simple Exersice Timer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Simple Exersice Timer-frameworks.sh"; sourceTree = "<group>"; };
+		BC0D516E63BDB8D4C07A8195123D9A3F /* UIColor+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Chameleon.h"; path = "Pod/Classes/Objective-C/UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		C35C8307C1273DB0693F3EE89502B432 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		CA074B8579A5EDE662B7307E506708BD /* ResourceBundle-MBCircularProgressBar-MBCircularProgressBar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MBCircularProgressBar-MBCircularProgressBar-Info.plist"; sourceTree = "<group>"; };
+		CBE3E601075DE78A70C67C8BE83C21EE /* ChameleonConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ChameleonConstants.m; path = "Pod/Classes/Objective-C/ChameleonConstants.m"; sourceTree = "<group>"; };
+		CC2EB066ACB89DB204F5F3243D8FFBB8 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Chameleon.h"; path = "Pod/Classes/Objective-C/UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		D1ABEBFB80281DBF447B8349BEF24D63 /* MBCircularProgressBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCircularProgressBar.release.xcconfig; sourceTree = "<group>"; };
+		D3B036F82503869B48FAF55885F0134A /* Pods-Simple Exersice Timer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Simple Exersice Timer-acknowledgements.plist"; sourceTree = "<group>"; };
+		D48E7D80150CEDE09306AE829CBE0BFF /* MBCircularProgressBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarView.h; path = Pod/Classes/MBCircularProgressBarView.h; sourceTree = "<group>"; };
+		DF006250BD93A62118622EB4AF3A6B6A /* MBCircularProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCircularProgressBar-dummy.m"; sourceTree = "<group>"; };
+		E2336BE3A0B08DA9516A5FEDD13119DE /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ChameleonPrivate.m"; path = "Pod/Classes/Objective-C/UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		E9619AD32B9688140D2D7E311E21D908 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6575FF60CCDDF095D39F8B9D7CF724 /* ChameleonFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ChameleonFramework.modulemap; sourceTree = "<group>"; };
+		EC52B314F24BC32CDA7B523FAA24A727 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		F26F99E4638CCAA472D376DDD603BE28 /* Pods-Simple Exersice Timer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Simple Exersice Timer-dummy.m"; sourceTree = "<group>"; };
+		F2FA56D35BBD218394353821C71CFEA2 /* example.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = example.png; path = Pod/Assets/example.png; sourceTree = "<group>"; };
+		F87A75C24B3713658727EAD1FD19CA8A /* UIAppearance+Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAppearance+Swift.h"; path = "Pod/Classes/Objective-C/UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		FBFC2E34A0D4D42A5B6FF357550CA9C6 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		FC66FCFA87CBE1F3737BF148AD5DCC48 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5B26CC217726FA889480C47EAD76BC27 /* Frameworks */ = {
+		275C01B71027EEBAF8475F1051D4713E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A4DE37D77247F5370AB63BDCA673FC /* CoreGraphics.framework in Frameworks */,
-				21B4826A1FB82735FF9327D3FD2C367E /* Foundation.framework in Frameworks */,
-				B7E9269D9E23A2F3D80ED1E12E6A7915 /* QuartzCore.framework in Frameworks */,
-				0A3C05C3B28CB4272BAE0E3CFB8C89A1 /* UIKit.framework in Frameworks */,
+				4953ABDB7763BF30E7BDF612A41540A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA904CD3E42C061CC84EAAE046F59378 /* Frameworks */ = {
+		8AFF5CBBF8423F0F4423AF6DDCE468D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A26C40DA9CEE3F886E3202801805C986 /* Foundation.framework in Frameworks */,
-				BCE77F19E17B87B4E2778BEB45DA06E4 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDCEFDDD5591E5DD938D615B34322A5B /* Frameworks */ = {
+		A7071D2ABF9DF1EDF70F34A51AEB4BFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05353EB6A0D574C297CA91E460787437 /* Foundation.framework in Frameworks */,
+				6923F7A1C8D1955C762B0BAFD37AEF39 /* CoreGraphics.framework in Frameworks */,
+				91EF3995BC20261A8CD5F07F781309C8 /* Foundation.framework in Frameworks */,
+				1FEB18B6FFD35302FF08C453491FBFE3 /* QuartzCore.framework in Frameworks */,
+				14390333BA1D71FD5E7B76AD2CF32C04 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D1D1191F24E31CEEA04BDB3FB4C0F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4914107FF5A197B9D0BC6D1C089E33D /* Foundation.framework in Frameworks */,
+				99456829035D2883017E8EBCDB82C231 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEF98BA925FA4743970105B0EBFEA69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B391B5795F1527C453904641A5A61AF9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1038D150F253E149779E453BB882D003 /* Resources */ = {
+		07623DCE2B4F75E4DB0D66533DDAF425 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DFC6BB4C3BF0E9D4E67CB100B339D9C8 /* SVProgressHUD.bundle */,
+				AD341C6E035CF3F739D8E30DE341CCA9 /* SVProgressHUD.modulemap */,
+				C35C8307C1273DB0693F3EE89502B432 /* SVProgressHUD-dummy.m */,
+				8A1E93C879A8993BE4233F23950632BE /* SVProgressHUD-Info.plist */,
+				5094AF7977B0E5E46F66EC6DA8115275 /* SVProgressHUD-prefix.pch */,
+				7DA5D30DC931DF15AF239DAB1384B3C3 /* SVProgressHUD-umbrella.h */,
+				8C49EF7B6D2D050C2258FC7E144F34C7 /* SVProgressHUD.debug.xcconfig */,
+				6F91CA8938FAA32CBC3AA44DF50B4793 /* SVProgressHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		0801B13D74EF747DC6FF512D41F63B47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC66FCFA87CBE1F3737BF148AD5DCC48 /* SVProgressHUD.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		1DD123671038CED35ECA858A909798E2 /* Products */ = {
+		1392D6857A44D3453F28181918F307C8 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A5DD4606DE55CCD0553C87E3B106A8BE /* ChameleonFramework.framework */,
-				9988860B07C770F3CB540BEA73D68D1E /* Pods_Simple_Exersice_Timer.framework */,
-				46523B7C10DAEDFBE4072E99C231CE3F /* SVProgressHUD.framework */,
+				EC52B314F24BC32CDA7B523FAA24A727 /* CoreGraphics.framework */,
+				1EE48DAC4AD4FC98EC01A9CC5B34AE82 /* Foundation.framework */,
+				009A3CF530BDED85FCFB71F2D51670CA /* QuartzCore.framework */,
+				71BBEAB859C48569C695B0B3FB39F6F9 /* UIKit.framework */,
 			);
-			name = Products;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		219647C95EC3846F20E7BAC2CF090A51 /* Default */ = {
+		52BC4055D33D779E7340FAA6F12694D2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3B2EE1BEB6849EC86C048F7B8A09FAC7 /* Chameleon.h */,
-				96F6F57A117BE35618A867071D29A174 /* Chameleon_.h */,
-				1BC8B998E49A4C7F752499CE66139FFB /* Chameleon_.m */,
-				DE2E52A411B2BC0A20209375576347EE /* ChameleonConstants.h */,
-				48AAEFE67E0855F615529B373BF510B7 /* ChameleonConstants.m */,
-				EEEBD0C5868D9F070AB10C849F217310 /* ChameleonEnums.h */,
-				CB8567A0D185661EB6D71EC90092AD05 /* ChameleonMacros.h */,
-				447FEF95B2355AD4E27D07CDB6FEAFE5 /* NSArray+Chameleon.h */,
-				5854E39257ACD6CD0E5F1D5473D7DEE0 /* NSArray+Chameleon.m */,
-				53A5091453EDC0406CE7FB8E6C1D420E /* UIAppearance+Swift.h */,
-				C83A207F056DFCAA0E6654F7A6D64FB0 /* UIAppearance+Swift.m */,
-				F6F73E2B9F6E96D504EDA89C2647CEFD /* UIButton+Chameleon.h */,
-				FCF1718E47C4C828B5F22B6CB9C43005 /* UIButton+Chameleon.m */,
-				920F154A1498BBC2FF6B319012D2384E /* UIColor+Chameleon.h */,
-				8698CF09179D5D8B9CE7ADCF7D4638D4 /* UIColor+Chameleon.m */,
-				4C163852D0B6C5BBF7802DCB52186554 /* UIColor+ChameleonPrivate.h */,
-				76A680F664432A2D01BB269ADBC49741 /* UIColor+ChameleonPrivate.m */,
-				4516B47F5BA7B82AC0184B8CC4FDA298 /* UIImage+ChameleonPrivate.h */,
-				1B7D810F9ACFB425F68E0AB2F52F167F /* UIImage+ChameleonPrivate.m */,
-				37D953A51FA3E8B86C2112AED2E35D02 /* UILabel+Chameleon.h */,
-				4965E861D81DEA30614F2DCBA25799FC /* UILabel+Chameleon.m */,
-				1FE43FE4BF2758D62A42D86A502EF52D /* UINavigationController+Chameleon.h */,
-				2255CAF6F0795140CA613AF4575BB1BA /* UINavigationController+Chameleon.m */,
-				0563399E7B9C14A8223A80F401C43E10 /* UIView+ChameleonPrivate.h */,
-				45E4E14F8CCB08DE072C1C054F08B0DC /* UIView+ChameleonPrivate.m */,
-				B5A889C7A8B94DF389366E16BB49E73D /* UIViewController+Chameleon.h */,
-				7EFDD729C055D6565B17CF262B29299B /* UIViewController+Chameleon.m */,
+				920889420623C09DB9BE5C5DEDE2B502 /* MBCircularProgressBar.modulemap */,
+				DF006250BD93A62118622EB4AF3A6B6A /* MBCircularProgressBar-dummy.m */,
+				617472B6104246F10B25628CFC84DD05 /* MBCircularProgressBar-Info.plist */,
+				6553D4C649E44E77C26A70E65277912F /* MBCircularProgressBar-prefix.pch */,
+				80A9B2C5161AC5718FBD1EC955AA98A3 /* MBCircularProgressBar-umbrella.h */,
+				6F53AE9841021EBD9F503978E5A47051 /* MBCircularProgressBar.debug.xcconfig */,
+				D1ABEBFB80281DBF447B8349BEF24D63 /* MBCircularProgressBar.release.xcconfig */,
+				CA074B8579A5EDE662B7307E506708BD /* ResourceBundle-MBCircularProgressBar-MBCircularProgressBar-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBCircularProgressBar";
+			sourceTree = "<group>";
+		};
+		53AAF8EA0A7014FEF71F3D2EE83F9BD1 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				0F96054213417666DB25A46615E2DF16 /* Chameleon.h */,
+				695DC026A339274D6C31325AEE0BD0DB /* Chameleon_.h */,
+				262806485D49B6560BB4AB6127AF6C13 /* Chameleon_.m */,
+				2E090160C8C135AAE7F60DF17C8339F6 /* ChameleonConstants.h */,
+				CBE3E601075DE78A70C67C8BE83C21EE /* ChameleonConstants.m */,
+				61E22C37BC60CD2184B111F2BD59F049 /* ChameleonEnums.h */,
+				0E5E488E901BF7269C8435D2A012E9D4 /* ChameleonMacros.h */,
+				71C3AEDC44A43001932CDCE70AA3D15F /* NSArray+Chameleon.h */,
+				87651CB60E5483242BF0ADEC646E68D1 /* NSArray+Chameleon.m */,
+				F87A75C24B3713658727EAD1FD19CA8A /* UIAppearance+Swift.h */,
+				97D628462A999AC651953E4999D8A564 /* UIAppearance+Swift.m */,
+				1197D348512EAEF021D519D075314FEF /* UIButton+Chameleon.h */,
+				12D0AD8CE16C7FF2C7B0AF57759E83D3 /* UIButton+Chameleon.m */,
+				BC0D516E63BDB8D4C07A8195123D9A3F /* UIColor+Chameleon.h */,
+				3BBC01193BBCC5BA6D5EA922708720D7 /* UIColor+Chameleon.m */,
+				A91E171D424F1DB2393C53D3AAE58F39 /* UIColor+ChameleonPrivate.h */,
+				B2CAA8DE45519EC79D3E068B7290FD06 /* UIColor+ChameleonPrivate.m */,
+				68936C3871EFC0B28B344E34DF93377D /* UIImage+ChameleonPrivate.h */,
+				46EFBDE21CC3EFA73B7DE03D136A45D3 /* UIImage+ChameleonPrivate.m */,
+				93BE726A1EFAED1C7F877410A8076B9C /* UILabel+Chameleon.h */,
+				1AF393412C15EB9A5D2A4C2A62A15680 /* UILabel+Chameleon.m */,
+				8A4CB30E44629C367257E7F66977A1D6 /* UINavigationController+Chameleon.h */,
+				5BC16A95E439938897C5E99DE69E90EA /* UINavigationController+Chameleon.m */,
+				26F1BF11C094EC6E93A21F1AB4782409 /* UIView+ChameleonPrivate.h */,
+				E2336BE3A0B08DA9516A5FEDD13119DE /* UIView+ChameleonPrivate.m */,
+				CC2EB066ACB89DB204F5F3243D8FFBB8 /* UIViewController+Chameleon.h */,
+				502A4080ABAA5B8DC4CA990D149D4C95 /* UIViewController+Chameleon.m */,
 			);
 			name = Default;
 			sourceTree = "<group>";
 		};
-		39482FA8AA807773CC819B0EA4B92202 /* Support Files */ = {
+		5BF89A0C52CE2F845C2F2E90CD5DFE6A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9793EF0E68523B1382A36BF5AD37740C /* ChameleonFramework.modulemap */,
-				B870328948094D5B6AEAB31ADD4A2C6A /* ChameleonFramework.xcconfig */,
-				8D93166A09FEE9FE15AE1EAA43087974 /* ChameleonFramework-dummy.m */,
-				294E679365A0E62A3B2C4B82B06FDD2F /* ChameleonFramework-Info.plist */,
-				6713AB18FD1FE674870DD70DD5117C1E /* ChameleonFramework-prefix.pch */,
-				3258731537C930990FF77D4049C9EE2E /* ChameleonFramework-umbrella.h */,
+				E60ED8FE0B8F0D628706B42ECC8B1941 /* ChameleonFramework */,
+				FD0A000407F0768027CA2B442701845F /* MBCircularProgressBar */,
+				E2B34E7D5E8B750E80D2D623AD92C4CD /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94D233948911D2A1F944B9EF6ABC867B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB6575FF60CCDDF095D39F8B9D7CF724 /* ChameleonFramework.modulemap */,
+				8D0B41B639A1733A2A4B3E58E82E88B3 /* ChameleonFramework-dummy.m */,
+				521FBC17D0E1E7A60C83F7F286F7E062 /* ChameleonFramework-Info.plist */,
+				9715FC5BEA770B6500D80EBF52A55AE3 /* ChameleonFramework-prefix.pch */,
+				0ABF4329E725D3551BCB62E3FC6B8ADC /* ChameleonFramework-umbrella.h */,
+				94773E1687EF88B332E5933FD8F2881D /* ChameleonFramework.debug.xcconfig */,
+				B6388EFEC90FB3CF8E1CD7690514AAED /* ChameleonFramework.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ChameleonFramework";
 			sourceTree = "<group>";
 		};
-		6788063BB0DE20E265F3A71C6E38B044 /* Pods */ = {
+		BA23F50B644FE87602DBFF206009508E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D23B5DE9291591EE7F6CD4323EEDD7D6 /* ChameleonFramework */,
-				78261DA2B8EB85AF8629BCEA735BE7AA /* SVProgressHUD */,
+				0383903D05EDD5C442C682C1F7A1752D /* ChameleonFramework.framework */,
+				7CB12AE789452060456EBCEC68360820 /* MBCircularProgressBar.bundle */,
+				640B2CA36D53D84D0129B12A7FAC2E0B /* MBCircularProgressBar.framework */,
+				4CEEF56C6E37420EFCD5D6DE7881AADA /* Pods_Simple_Exersice_Timer.framework */,
+				E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		78261DA2B8EB85AF8629BCEA735BE7AA /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				5BDAC107A67D1D81B2AA4ADC03637C23 /* SVIndefiniteAnimatedView.h */,
-				975BEB2D9E1694C4BF52217F0BF1516C /* SVIndefiniteAnimatedView.m */,
-				7AA389C0087BFD68032FEACEE851F8F8 /* SVProgressAnimatedView.h */,
-				3D29F915D2D979D99C8C436A4543590D /* SVProgressAnimatedView.m */,
-				A8616F8939E733D3E9CAF33326BB1E02 /* SVProgressHUD.h */,
-				00ECEC85C96362E9459FA508C644EB19 /* SVProgressHUD.m */,
-				46B2DD00089BC9B2618CAFE41CB2B76E /* SVRadialGradientLayer.h */,
-				F18C0D84365F1DC95ED0049959ED8AB9 /* SVRadialGradientLayer.m */,
-				1038D150F253E149779E453BB882D003 /* Resources */,
-				CFFBE9E297D843D2CAC12975D67BE8BF /* Support Files */,
-			);
-			name = SVProgressHUD;
-			path = SVProgressHUD;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD35F57B08FA07466EF52BE52CC46A1D /* iOS */,
+				1392D6857A44D3453F28181918F307C8 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB67C5D4455F75BC31AB37C38C4862E4 /* Pods-Simple Exersice Timer */ = {
+			isa = PBXGroup;
+			children = (
+				2087511EE359771AC815296FF946ADE7 /* Pods-Simple Exersice Timer.modulemap */,
+				780937F269000A8C46A98E035FF16697 /* Pods-Simple Exersice Timer-acknowledgements.markdown */,
+				D3B036F82503869B48FAF55885F0134A /* Pods-Simple Exersice Timer-acknowledgements.plist */,
+				F26F99E4638CCAA472D376DDD603BE28 /* Pods-Simple Exersice Timer-dummy.m */,
+				BA51F8201DFBA886A512922AE17DA445 /* Pods-Simple Exersice Timer-frameworks.sh */,
+				03353E0197BDF44F043FD09B750EA7BA /* Pods-Simple Exersice Timer-Info.plist */,
+				4E4212362A764448A0EC0319BD3F2590 /* Pods-Simple Exersice Timer-umbrella.h */,
+				9CE2DA2620A2F2464FCE38282D466C13 /* Pods-Simple Exersice Timer.debug.xcconfig */,
+				3A39F6B4389647982371292D89AAE9E3 /* Pods-Simple Exersice Timer.release.xcconfig */,
+			);
+			name = "Pods-Simple Exersice Timer";
+			path = "Target Support Files/Pods-Simple Exersice Timer";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -281,167 +381,137 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
-				6788063BB0DE20E265F3A71C6E38B044 /* Pods */,
-				1DD123671038CED35ECA858A909798E2 /* Products */,
+				5BF89A0C52CE2F845C2F2E90CD5DFE6A /* Pods */,
+				BA23F50B644FE87602DBFF206009508E /* Products */,
 				DF7526C32A089422AD40E0EC03201D79 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		CFFBE9E297D843D2CAC12975D67BE8BF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E9F5A729F2F256BDFD930502695CA95F /* SVProgressHUD.modulemap */,
-				1098B6F36ED195587DF424D732C46F20 /* SVProgressHUD.xcconfig */,
-				EEE88BAD46917BCB71DB78D33D500EEE /* SVProgressHUD-dummy.m */,
-				20D759E8CCD3D9352ADD133BA2C878C1 /* SVProgressHUD-Info.plist */,
-				2DF68A042C608B7F285EC422BCBE1866 /* SVProgressHUD-prefix.pch */,
-				2D218D9BB4D4983FC1260E92B115DFFD /* SVProgressHUD-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
-			sourceTree = "<group>";
-		};
-		D23B5DE9291591EE7F6CD4323EEDD7D6 /* ChameleonFramework */ = {
-			isa = PBXGroup;
-			children = (
-				219647C95EC3846F20E7BAC2CF090A51 /* Default */,
-				39482FA8AA807773CC819B0EA4B92202 /* Support Files */,
-			);
-			name = ChameleonFramework;
-			path = ChameleonFramework;
-			sourceTree = "<group>";
-		};
-		DD35F57B08FA07466EF52BE52CC46A1D /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				17D5053F2A5215D7472A947EDE5B61B6 /* CoreGraphics.framework */,
-				4AABFE60463C3AF51CB267EA82A0CCF3 /* Foundation.framework */,
-				30C5248F3F8F5DD6FF2489BCA891824D /* QuartzCore.framework */,
-				1B864BFE95FAE118C4C3A52725C9B261 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		DF7526C32A089422AD40E0EC03201D79 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F7883BD628D7F92D84BB10431B5E2113 /* Pods-Simple Exersice Timer */,
+				CB67C5D4455F75BC31AB37C38C4862E4 /* Pods-Simple Exersice Timer */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F7883BD628D7F92D84BB10431B5E2113 /* Pods-Simple Exersice Timer */ = {
+		E2B34E7D5E8B750E80D2D623AD92C4CD /* SVProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				48BE22A347396CC4B5A14D79F1F47161 /* Pods-Simple Exersice Timer.modulemap */,
-				526CB87DC59EEACC8596E6642275E046 /* Pods-Simple Exersice Timer-acknowledgements.markdown */,
-				23C825A1D0DD2EC1BBD929C6B7B91BA5 /* Pods-Simple Exersice Timer-acknowledgements.plist */,
-				9A3B1EAAC90A5B0D451F733B4348014D /* Pods-Simple Exersice Timer-dummy.m */,
-				06A92CD5F293B9E0175DDA01F331724A /* Pods-Simple Exersice Timer-frameworks.sh */,
-				E4B3DAE7534AAC90106F789C6ADB4802 /* Pods-Simple Exersice Timer-Info.plist */,
-				A1C06D1D529003D812904EBBF7CFD3A7 /* Pods-Simple Exersice Timer-umbrella.h */,
-				D5C2BE73F49A662C8D8B6A218AE7FC4D /* Pods-Simple Exersice Timer.debug.xcconfig */,
-				6796840A119873EC4F69A111AC8C7AA3 /* Pods-Simple Exersice Timer.release.xcconfig */,
+				FBFC2E34A0D4D42A5B6FF357550CA9C6 /* SVIndefiniteAnimatedView.h */,
+				93B779F2D6F5C9106348130245046FDC /* SVIndefiniteAnimatedView.m */,
+				80F7F35F2171FBF3990CC70D2B8BE9E1 /* SVProgressAnimatedView.h */,
+				38E1C17DC9AA4181806C9E04FE22D0D6 /* SVProgressAnimatedView.m */,
+				E9619AD32B9688140D2D7E311E21D908 /* SVProgressHUD.h */,
+				51AACF00A1AA2A34A94780EF455A3672 /* SVProgressHUD.m */,
+				9B458FF47FBF8FB7752AB8A807417150 /* SVRadialGradientLayer.h */,
+				73FF02F636CA4C9261D86DD6EF074ABE /* SVRadialGradientLayer.m */,
+				0801B13D74EF747DC6FF512D41F63B47 /* Resources */,
+				07623DCE2B4F75E4DB0D66533DDAF425 /* Support Files */,
 			);
-			name = "Pods-Simple Exersice Timer";
-			path = "Target Support Files/Pods-Simple Exersice Timer";
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		E3C4E67E7C79FC8976C54392CE855900 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2FA56D35BBD218394353821C71CFEA2 /* example.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E60ED8FE0B8F0D628706B42ECC8B1941 /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				53AAF8EA0A7014FEF71F3D2EE83F9BD1 /* Default */,
+				94D233948911D2A1F944B9EF6ABC867B /* Support Files */,
+			);
+			name = ChameleonFramework;
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		FD0A000407F0768027CA2B442701845F /* MBCircularProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				6422A84475D2889A46E0BD07EE84303B /* MBCircularProgressBarLayer.h */,
+				4EB65B8E5A9E2581CD84DDF4BBCAD57E /* MBCircularProgressBarLayer.m */,
+				D48E7D80150CEDE09306AE829CBE0BFF /* MBCircularProgressBarView.h */,
+				56D962735B70DB5664CD6BC4456EA924 /* MBCircularProgressBarView.m */,
+				E3C4E67E7C79FC8976C54392CE855900 /* Resources */,
+				52BC4055D33D779E7340FAA6F12694D2 /* Support Files */,
+			);
+			name = MBCircularProgressBar;
+			path = MBCircularProgressBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1544AC09330A8EF902300F225767F814 /* Headers */ = {
+		7C044C67F11489EFA3459B8399E7061C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D00F97846CA8B8E875F66CDEC92C8CCC /* Pods-Simple Exersice Timer-umbrella.h in Headers */,
+				96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */,
+				E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */,
+				DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */,
+				0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */,
+				D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		47B1E3A62F85A9A2711FDAEF172F9633 /* Headers */ = {
+		913BF33940ADD0A78BF8986219E80027 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C72371AC1A753865275F8B7D43AB845 /* SVIndefiniteAnimatedView.h in Headers */,
-				00602837C4EB370BECF8CAB6371ECE31 /* SVProgressAnimatedView.h in Headers */,
-				96DF18A1A821E84B3B5A08C64CB35721 /* SVProgressHUD-umbrella.h in Headers */,
-				C080488DCC1ACBC7FD2D5FA644B0DFDC /* SVProgressHUD.h in Headers */,
-				C10841CBCE21B36A029EED967D2463D6 /* SVRadialGradientLayer.h in Headers */,
+				71F34A5F16965FA53B937277C3001FF3 /* Pods-Simple Exersice Timer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC6335FF09DC2FC4B74F658502D3D481 /* Headers */ = {
+		EAEB23D82270836245020CB224301E0F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C757876350939D4F88841D334DA7E24 /* Chameleon.h in Headers */,
-				A5F19A3D5D3DF3BCB4EB600F6DFF8CF3 /* Chameleon_.h in Headers */,
-				4E5874554B3C0473C812050877F4F85E /* ChameleonConstants.h in Headers */,
-				9ED66BF512CD86548C98C36238E0CCAE /* ChameleonEnums.h in Headers */,
-				544B9E54D436D52038968208CAF89065 /* ChameleonFramework-umbrella.h in Headers */,
-				1E1A98F0AB97D3A1503581764D51D911 /* ChameleonMacros.h in Headers */,
-				323D7E9FA828976CA1F11C04D6925E20 /* NSArray+Chameleon.h in Headers */,
-				43D7084EA0E144EAA0C3CC21CF669ADE /* UIAppearance+Swift.h in Headers */,
-				2EE5B045F1375CD975DA453B4CCEDDF5 /* UIButton+Chameleon.h in Headers */,
-				A8E86B459287DF9D842CCE092B5FB5C7 /* UIColor+Chameleon.h in Headers */,
-				9BF027F3840EC10E9C57675B2053F5DB /* UIColor+ChameleonPrivate.h in Headers */,
-				CD48A584D2186FAA3596DF7CEA4A1DF3 /* UIImage+ChameleonPrivate.h in Headers */,
-				5DE5B5F0E5F11A609D14CAB6B620DE92 /* UILabel+Chameleon.h in Headers */,
-				262D8EE8EDE3BCBA0ED251A7EB07D2D0 /* UINavigationController+Chameleon.h in Headers */,
-				F988D4BAD9A90D9EE4D3F6CE836935AC /* UIView+ChameleonPrivate.h in Headers */,
-				FC9CC7DA9398391736887E00ECD7D36E /* UIViewController+Chameleon.h in Headers */,
+				D4839F67BE8C69F43BD112E09BEA4173 /* Chameleon.h in Headers */,
+				BAE5D1087D992145E42527B389C87E71 /* Chameleon_.h in Headers */,
+				4DE488981D3BC23926AE78D6A8E4D690 /* ChameleonConstants.h in Headers */,
+				23D4ABA1F1A08969C754D10176B897D2 /* ChameleonEnums.h in Headers */,
+				807C65955C0AF5A51E8ACBBAAA227783 /* ChameleonFramework-umbrella.h in Headers */,
+				1E797CC4D406A37AE198331BB404DEB9 /* ChameleonMacros.h in Headers */,
+				408D4F0B074B75C2990813B29A630223 /* NSArray+Chameleon.h in Headers */,
+				43486AB02F80F684F2DE24B038862DE6 /* UIAppearance+Swift.h in Headers */,
+				4F84370C42840B7CCE842A25EAD9614D /* UIButton+Chameleon.h in Headers */,
+				E68A8B502EB99C9BD05510FFD2C3C8EC /* UIColor+Chameleon.h in Headers */,
+				CDA69A6E4217DD12474241E06C0D4A40 /* UIColor+ChameleonPrivate.h in Headers */,
+				B6E3EA9E5C841DE01821FB720A68020D /* UIImage+ChameleonPrivate.h in Headers */,
+				AB9D965B65BC895FC66AEF8568B7F45E /* UILabel+Chameleon.h in Headers */,
+				3A3553172238440378F337D6395AE7FB /* UINavigationController+Chameleon.h in Headers */,
+				F534309C29DB4B4F0B566CB040386059 /* UIView+ChameleonPrivate.h in Headers */,
+				8973C3894627094AA75B5CFB7C6726B6 /* UIViewController+Chameleon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F054FECB85406FECA66155626CBAD5E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D929BA37AA35F7FC5F94774B92DD4A45 /* MBCircularProgressBar-umbrella.h in Headers */,
+				B5B78B08A40B48EA2EF14C54DB496BFF /* MBCircularProgressBarLayer.h in Headers */,
+				B2951C6401A44274F96893ACEA23B734 /* MBCircularProgressBarView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		78F58F86BCFBC51959B007808F05DC2D /* Pods-Simple Exersice Timer */ = {
+		1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3159984DE2EACC397B9B5C0FF941379 /* Build configuration list for PBXNativeTarget "Pods-Simple Exersice Timer" */;
+			buildConfigurationList = E76C288BA44757915CF3700D8A326EB7 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
 			buildPhases = (
-				1544AC09330A8EF902300F225767F814 /* Headers */,
-				22843F4B907261656ADDC0F2120F6043 /* Sources */,
-				DDCEFDDD5591E5DD938D615B34322A5B /* Frameworks */,
-				9EB2D343242D549C49D3E6756D707791 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7EC70AF8C22B9FDF3684DA204EDC472D /* PBXTargetDependency */,
-				0C36B9E45D7EA4A88AC7856EA45521D4 /* PBXTargetDependency */,
-			);
-			name = "Pods-Simple Exersice Timer";
-			productName = "Pods-Simple Exersice Timer";
-			productReference = 9988860B07C770F3CB540BEA73D68D1E /* Pods_Simple_Exersice_Timer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DDA4920E0F0355D615535EC440A51F7A /* ChameleonFramework */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 077D3EF432A08F19489B86392CD3399F /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
-			buildPhases = (
-				EC6335FF09DC2FC4B74F658502D3D481 /* Headers */,
-				3A89B73B934E057D0E5BD9D42EF79975 /* Sources */,
-				5B26CC217726FA889480C47EAD76BC27 /* Frameworks */,
-				CA311A241DDC4FC4600C22D391FCA89C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ChameleonFramework;
-			productName = ChameleonFramework;
-			productReference = A5DD4606DE55CCD0553C87E3B106A8BE /* ChameleonFramework.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FD54107E7245FA53414FB17E280DD202 /* SVProgressHUD */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5EB3B108FB0509FC68C30C63EBE0CB7F /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
-			buildPhases = (
-				47B1E3A62F85A9A2711FDAEF172F9633 /* Headers */,
-				0CC6E28F8D67CB82D2453CCFF3893C16 /* Sources */,
-				CA904CD3E42C061CC84EAAE046F59378 /* Frameworks */,
-				C58DF0CC521E8611842A8DC5A3F5C082 /* Resources */,
+				7C044C67F11489EFA3459B8399E7061C /* Headers */,
+				D0233C648200ED130A278D7164E80914 /* Sources */,
+				B3D1D1191F24E31CEEA04BDB3FB4C0F2 /* Frameworks */,
+				7BB2E885B360CCC1AEF0C191542BA06E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -449,7 +519,82 @@
 			);
 			name = SVProgressHUD;
 			productName = SVProgressHUD;
-			productReference = 46523B7C10DAEDFBE4072E99C231CE3F /* SVProgressHUD.framework */;
+			productReference = E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		28BFDC89BA4363F4F3576DEC70EE10AE /* ChameleonFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82AECA492D6756CF98A53C31E562E4C7 /* Build configuration list for PBXNativeTarget "ChameleonFramework" */;
+			buildPhases = (
+				EAEB23D82270836245020CB224301E0F /* Headers */,
+				C3E205F4EAB3790E94CE1EAB851AA97C /* Sources */,
+				A7071D2ABF9DF1EDF70F34A51AEB4BFD /* Frameworks */,
+				9CB508A9BB6173DE9E2107497D9A8547 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChameleonFramework;
+			productName = ChameleonFramework;
+			productReference = 0383903D05EDD5C442C682C1F7A1752D /* ChameleonFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46FA1E1D7ABC29B96888E2D9085D474F /* MBCircularProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1B83AFEEE9608D2F57046BDBC0304E /* Build configuration list for PBXNativeTarget "MBCircularProgressBar" */;
+			buildPhases = (
+				F054FECB85406FECA66155626CBAD5E8 /* Headers */,
+				4571442C8D822609187F137AC2842BC0 /* Sources */,
+				EEF98BA925FA4743970105B0EBFEA69F /* Frameworks */,
+				3128B19DB08F9911DDC7E47EC79366AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81E819913C64B17926B0EB314BC61355 /* PBXTargetDependency */,
+			);
+			name = MBCircularProgressBar;
+			productName = MBCircularProgressBar;
+			productReference = 640B2CA36D53D84D0129B12A7FAC2E0B /* MBCircularProgressBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8BA5E348E64AFAB335EC680A67122E64 /* MBCircularProgressBar-MBCircularProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7ED6E3A484B404CCDBE0C1BAD69B1D9 /* Build configuration list for PBXNativeTarget "MBCircularProgressBar-MBCircularProgressBar" */;
+			buildPhases = (
+				B53D9374D58A40E6E030BDD57C438CFF /* Sources */,
+				8AFF5CBBF8423F0F4423AF6DDCE468D5 /* Frameworks */,
+				6CD6ED76229EE833A472E459DDFFD8BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MBCircularProgressBar-MBCircularProgressBar";
+			productName = "MBCircularProgressBar-MBCircularProgressBar";
+			productReference = 7CB12AE789452060456EBCEC68360820 /* MBCircularProgressBar.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A02DB9BC1B61CF03F50DD60F24B6F8B3 /* Pods-Simple Exersice Timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C25AD0F769408A15C961D0CC15D383 /* Build configuration list for PBXNativeTarget "Pods-Simple Exersice Timer" */;
+			buildPhases = (
+				913BF33940ADD0A78BF8986219E80027 /* Headers */,
+				6B64BEEC86F131E5BA360FB1103EC162 /* Sources */,
+				275C01B71027EEBAF8475F1051D4713E /* Frameworks */,
+				ADEB429CB56466032D2B8FE82E506A35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0F6BEC8F3ACA9A61627E0CF45BC2CDD /* PBXTargetDependency */,
+				F6E980ABF8802C917B248E87752DBC72 /* PBXTargetDependency */,
+				2FB5A10CF6A9075CC9911AD19653850C /* PBXTargetDependency */,
+			);
+			name = "Pods-Simple Exersice Timer";
+			productName = "Pods-Simple Exersice Timer";
+			productReference = 4CEEF56C6E37420EFCD5D6DE7881AADA /* Pods_Simple_Exersice_Timer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -458,45 +603,64 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1DD123671038CED35ECA858A909798E2 /* Products */;
+			productRefGroup = BA23F50B644FE87602DBFF206009508E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDA4920E0F0355D615535EC440A51F7A /* ChameleonFramework */,
-				78F58F86BCFBC51959B007808F05DC2D /* Pods-Simple Exersice Timer */,
-				FD54107E7245FA53414FB17E280DD202 /* SVProgressHUD */,
+				28BFDC89BA4363F4F3576DEC70EE10AE /* ChameleonFramework */,
+				46FA1E1D7ABC29B96888E2D9085D474F /* MBCircularProgressBar */,
+				8BA5E348E64AFAB335EC680A67122E64 /* MBCircularProgressBar-MBCircularProgressBar */,
+				A02DB9BC1B61CF03F50DD60F24B6F8B3 /* Pods-Simple Exersice Timer */,
+				1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9EB2D343242D549C49D3E6756D707791 /* Resources */ = {
+		3128B19DB08F9911DDC7E47EC79366AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF35DEA9B9504FF10DCB6318A5F4741C /* MBCircularProgressBar.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CD6ED76229EE833A472E459DDFFD8BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E669B08C4915DB763FAF5FCA7E50D08C /* example.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB2E885B360CCC1AEF0C191542BA06E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CB508A9BB6173DE9E2107497D9A8547 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C58DF0CC521E8611842A8DC5A3F5C082 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				403A73817F8102D2DBE37B02F486147D /* SVProgressHUD.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA311A241DDC4FC4600C22D391FCA89C /* Resources */ = {
+		ADEB429CB56466032D2B8FE82E506A35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -506,65 +670,242 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0CC6E28F8D67CB82D2453CCFF3893C16 /* Sources */ = {
+		4571442C8D822609187F137AC2842BC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DDA3FAF91891AEBF85D69500274B6FD /* SVIndefiniteAnimatedView.m in Sources */,
-				1CD766F0A62D4D98C3E2AA1665612B79 /* SVProgressAnimatedView.m in Sources */,
-				63228F2E19EEE517EF275E646EDCB074 /* SVProgressHUD-dummy.m in Sources */,
-				B8AE8DBFD1DE77694732B56BC1CDED56 /* SVProgressHUD.m in Sources */,
-				ADAF8E422C9358A9E7C7E976AB426981 /* SVRadialGradientLayer.m in Sources */,
+				3412A9E0D9B130A246008AB317F397C6 /* MBCircularProgressBar-dummy.m in Sources */,
+				E2072177AFAEFE3EFDABDB8D5F1193C2 /* MBCircularProgressBarLayer.m in Sources */,
+				A8D190DBB6AC3C998FCA54EC810EDE25 /* MBCircularProgressBarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22843F4B907261656ADDC0F2120F6043 /* Sources */ = {
+		6B64BEEC86F131E5BA360FB1103EC162 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2917EED3818D9360D8021F138D2456D7 /* Pods-Simple Exersice Timer-dummy.m in Sources */,
+				36CF9EE59E7A59CA6B9D4A08A2686F7B /* Pods-Simple Exersice Timer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A89B73B934E057D0E5BD9D42EF79975 /* Sources */ = {
+		B53D9374D58A40E6E030BDD57C438CFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC1607222E3497E24B168C1E564577DE /* Chameleon_.m in Sources */,
-				77C14A352FD99DAEEEDA80252768B569 /* ChameleonConstants.m in Sources */,
-				9F654055921251082EE11721B3B3BF45 /* ChameleonFramework-dummy.m in Sources */,
-				50542FD7A9FC39FF46C5D499E4B1E5A9 /* NSArray+Chameleon.m in Sources */,
-				CBE56BB61C19AB8878C6163DEAEB5DF5 /* UIAppearance+Swift.m in Sources */,
-				89E8C6274726E8F9FF374D622362D8D7 /* UIButton+Chameleon.m in Sources */,
-				734927E607D9713A8D74F5D422F726C2 /* UIColor+Chameleon.m in Sources */,
-				15F0014C0BEA7851808563FBCC24BF2A /* UIColor+ChameleonPrivate.m in Sources */,
-				1D8A6745E83737F957F7E57E5C8260B8 /* UIImage+ChameleonPrivate.m in Sources */,
-				FFEC85DAE1C4E08F4A75EDA85D8A9A7D /* UILabel+Chameleon.m in Sources */,
-				B33A516305B708BCB33E2A301677BB69 /* UINavigationController+Chameleon.m in Sources */,
-				6A0F06AC9E5E706557330AAB7B7343FA /* UIView+ChameleonPrivate.m in Sources */,
-				3AE2F2868A4D4AB5563B541B3E67E8D4 /* UIViewController+Chameleon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E205F4EAB3790E94CE1EAB851AA97C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE871A9D93624B9DBEC9C2CB90B4D8E3 /* Chameleon_.m in Sources */,
+				993D2B7B12E15E7D29540C93A8F32398 /* ChameleonConstants.m in Sources */,
+				1F697A793912CF20E30972DF4C5F4712 /* ChameleonFramework-dummy.m in Sources */,
+				A21C1018A91827ABB74627A97B0F29A7 /* NSArray+Chameleon.m in Sources */,
+				A3C4576FEAD52B788720ED84A45C0211 /* UIAppearance+Swift.m in Sources */,
+				79AEE663185F871492A4830BFC8CCA8C /* UIButton+Chameleon.m in Sources */,
+				05C80A3CD8FD854B9BDE8D6EAD982EB6 /* UIColor+Chameleon.m in Sources */,
+				52E9D93117DB574F467F4FE5FE34814B /* UIColor+ChameleonPrivate.m in Sources */,
+				EC8BB06D1A94F3DBCB1D3BC2FC9EFBDD /* UIImage+ChameleonPrivate.m in Sources */,
+				DA750978A4500BC1F43E866E11B9D761 /* UILabel+Chameleon.m in Sources */,
+				7E1C14151759CAF5CFA9B59DF4360E18 /* UINavigationController+Chameleon.m in Sources */,
+				9BF6F565B4EFD76D29301A2E956F0611 /* UIView+ChameleonPrivate.m in Sources */,
+				F474820DE7AFC5D42AA97A908ED9C5B3 /* UIViewController+Chameleon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0233C648200ED130A278D7164E80914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */,
+				EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */,
+				9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */,
+				3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */,
+				D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C36B9E45D7EA4A88AC7856EA45521D4 /* PBXTargetDependency */ = {
+		2FB5A10CF6A9075CC9911AD19653850C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SVProgressHUD;
-			target = FD54107E7245FA53414FB17E280DD202 /* SVProgressHUD */;
-			targetProxy = 6BAA4FD4D7781597DF0896D01B91FB44 /* PBXContainerItemProxy */;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = 0F6BF77F4284A28B473B0980CB3B59C5 /* PBXContainerItemProxy */;
 		};
-		7EC70AF8C22B9FDF3684DA204EDC472D /* PBXTargetDependency */ = {
+		81E819913C64B17926B0EB314BC61355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MBCircularProgressBar-MBCircularProgressBar";
+			target = 8BA5E348E64AFAB335EC680A67122E64 /* MBCircularProgressBar-MBCircularProgressBar */;
+			targetProxy = 7A3839CC7C71DC1A849358F16D5182FC /* PBXContainerItemProxy */;
+		};
+		A0F6BEC8F3ACA9A61627E0CF45BC2CDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ChameleonFramework;
-			target = DDA4920E0F0355D615535EC440A51F7A /* ChameleonFramework */;
-			targetProxy = 7AD94C6AF10201859A52BFA7205A9AAF /* PBXContainerItemProxy */;
+			target = 28BFDC89BA4363F4F3576DEC70EE10AE /* ChameleonFramework */;
+			targetProxy = 43C450738EE6ABCED7348E40E32EB463 /* PBXContainerItemProxy */;
+		};
+		F6E980ABF8802C917B248E87752DBC72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBCircularProgressBar;
+			target = 46FA1E1D7ABC29B96888E2D9085D474F /* MBCircularProgressBar */;
+			targetProxy = 575BC4B36297224E6810F869EB0E07AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07488D4657FB0A78086563621D425F8A /* Debug */ = {
+		1CBFEFD562EB15961EC30E8B32CBA455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C49EF7B6D2D050C2258FC7E144F34C7 /* SVProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81E809391E5A2BEA42EB3EB6295C3C08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1ABEBFB80281DBF447B8349BEF24D63 /* MBCircularProgressBar.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MBCircularProgressBar";
+				IBSC_MODULE = MBCircularProgressBar;
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/ResourceBundle-MBCircularProgressBar-MBCircularProgressBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		847584C4FE12141B8A4BD00DAC0F120A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6388EFEC90FB3CF8E1CD7690514AAED /* ChameleonFramework.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
+				PRODUCT_MODULE_NAME = ChameleonFramework;
+				PRODUCT_NAME = ChameleonFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -623,14 +964,14 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		54DB1423D8B1604AB1D7444E989D017E /* Debug */ = {
+		9FD1152EE061B69E29049E0918D99517 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1098B6F36ED195587DF424D732C46F20 /* SVProgressHUD.xcconfig */;
+			baseConfigurationReference = D1ABEBFB80281DBF447B8349BEF24D63 /* MBCircularProgressBar.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -641,8 +982,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -650,44 +991,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5EE00726421BD468CAF5F4AB03B87456 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1098B6F36ED195587DF424D732C46F20 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
+				MODULEMAP_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar.modulemap";
+				PRODUCT_MODULE_NAME = MBCircularProgressBar;
+				PRODUCT_NAME = MBCircularProgressBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -699,69 +1005,9 @@
 			};
 			name = Release;
 		};
-		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
+		A3E4684E5300CAE8A5698C9CC2C5FE05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B2DF34C7F2CF343A1EA8ADADB08412CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B870328948094D5B6AEAB31ADD4A2C6A /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = 6F53AE9841021EBD9F503978E5A47051 /* MBCircularProgressBar.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -772,8 +1018,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ChameleonFramework/ChameleonFramework-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -781,23 +1027,39 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/ChameleonFramework/ChameleonFramework.modulemap";
-				PRODUCT_MODULE_NAME = ChameleonFramework;
-				PRODUCT_NAME = ChameleonFramework;
+				MODULEMAP_FILE = "Target Support Files/MBCircularProgressBar/MBCircularProgressBar.modulemap";
+				PRODUCT_MODULE_NAME = MBCircularProgressBar;
+				PRODUCT_NAME = MBCircularProgressBar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		E0ED4B6BCAF6402EE25FD2DC0AA13F2D /* Release */ = {
+		AE0CF1C8BA4ED7E24FCF7B4FF036C648 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6796840A119873EC4F69A111AC8C7AA3 /* Pods-Simple Exersice Timer.release.xcconfig */;
+			baseConfigurationReference = 6F53AE9841021EBD9F503978E5A47051 /* MBCircularProgressBar.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MBCircularProgressBar";
+				IBSC_MODULE = MBCircularProgressBar;
+				INFOPLIST_FILE = "Target Support Files/MBCircularProgressBar/ResourceBundle-MBCircularProgressBar-MBCircularProgressBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = MBCircularProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AEF7CD72895118E4A34EC3FACBDA429D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A39F6B4389647982371292D89AAE9E3 /* Pods-Simple Exersice Timer.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -833,9 +1095,9 @@
 			};
 			name = Release;
 		};
-		EA0A275B66D2EFFCAFB7D49AFD2D6615 /* Debug */ = {
+		B21B282BC73204C7787B29737D45F156 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B870328948094D5B6AEAB31ADD4A2C6A /* ChameleonFramework.xcconfig */;
+			baseConfigurationReference = 94773E1687EF88B332E5933FD8F2881D /* ChameleonFramework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -868,9 +1130,45 @@
 			};
 			name = Debug;
 		};
-		FCD9F26DAF40F7A08A0F4EE993E9C8FB /* Debug */ = {
+		DB8DF0C1FC2A181B0C5BCF1E0BAAC682 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5C2BE73F49A662C8D8B6A218AE7FC4D /* Pods-Simple Exersice Timer.debug.xcconfig */;
+			baseConfigurationReference = 6F91CA8938FAA32CBC3AA44DF50B4793 /* SVProgressHUD.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F923E1454D579A0B2858DF60D45D0BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE2DA2620A2F2464FCE38282D466C13 /* Pods-Simple Exersice Timer.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -908,38 +1206,56 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		077D3EF432A08F19489B86392CD3399F /* Build configuration list for PBXNativeTarget "ChameleonFramework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA0A275B66D2EFFCAFB7D49AFD2D6615 /* Debug */,
-				B2DF34C7F2CF343A1EA8ADADB08412CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07488D4657FB0A78086563621D425F8A /* Debug */,
-				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EB3B108FB0509FC68C30C63EBE0CB7F /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+		53C25AD0F769408A15C961D0CC15D383 /* Build configuration list for PBXNativeTarget "Pods-Simple Exersice Timer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				54DB1423D8B1604AB1D7444E989D017E /* Debug */,
-				5EE00726421BD468CAF5F4AB03B87456 /* Release */,
+				F923E1454D579A0B2858DF60D45D0BD2 /* Debug */,
+				AEF7CD72895118E4A34EC3FACBDA429D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F3159984DE2EACC397B9B5C0FF941379 /* Build configuration list for PBXNativeTarget "Pods-Simple Exersice Timer" */ = {
+		82AECA492D6756CF98A53C31E562E4C7 /* Build configuration list for PBXNativeTarget "ChameleonFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCD9F26DAF40F7A08A0F4EE993E9C8FB /* Debug */,
-				E0ED4B6BCAF6402EE25FD2DC0AA13F2D /* Release */,
+				B21B282BC73204C7787B29737D45F156 /* Debug */,
+				847584C4FE12141B8A4BD00DAC0F120A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7ED6E3A484B404CCDBE0C1BAD69B1D9 /* Build configuration list for PBXNativeTarget "MBCircularProgressBar-MBCircularProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0CF1C8BA4ED7E24FCF7B4FF036C648 /* Debug */,
+				81E809391E5A2BEA42EB3EB6295C3C08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF1B83AFEEE9608D2F57046BDBC0304E /* Build configuration list for PBXNativeTarget "MBCircularProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E4684E5300CAE8A5698C9CC2C5FE05 /* Debug */,
+				9FD1152EE061B69E29049E0918D99517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76C288BA44757915CF3700D8A326EB7 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CBFEFD562EB15961EC30E8B32CBA455 /* Debug */,
+				DB8DF0C1FC2A181B0C5BCF1E0BAAC682 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

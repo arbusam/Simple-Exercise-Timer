@@ -119,6 +119,7 @@ class StartTimerViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
     @IBAction func startButtonPressed() {
+<<<<<<< Updated upstream
 //        text = "Succces"
 //        let alert = UIAlertController(title: "Alert", message: "All your values have to contain something.", preferredStyle: UIAlertController.Style.alert)
 //        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
